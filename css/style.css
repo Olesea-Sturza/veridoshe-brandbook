@@ -12,11 +12,11 @@
   --muted:  #6E6555;
   --border: rgba(225,169,51,.15);
   --bhi:    rgba(225,169,51,.40);
-  --fw: 'Oswald', 'Barlow Condensed', sans-serif;
-  --fd: 'Barlow Condensed', sans-serif;
-  --fb: 'Barlow', sans-serif;
-  --fs: 'Playfair Display', Georgia, serif;
-  --fm: 'Courier New', monospace;
+ --fw: 'Montserrat', sans-serif;
+--fd: 'Montserrat', sans-serif;
+--fb: 'Montserrat', sans-serif;
+--fs: 'Cormorant Garamond', serif;
+--fm: 'Courier New', monospace;
   /* spacing scale */
 
   --v-sp-1: 0.25rem;   /* 4px  — icon gaps, micro-spacing */
@@ -498,7 +498,7 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   display:flex;
   align-items:center;
   justify-content:center;
-  font-family: var(--fs, 'Playfair Display', serif);
+  font-family: var(--fs,  'Cormorant Garamond', serif);
   font-style: italic;
   font-size: 15px;
   font-weight: 400;
@@ -817,33 +817,211 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
 
 
 /* HARMONY DEMO */
-.demo { margin-top: 44px; }
-.demo-title { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 1.3rem; font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 6px; }
-.demo-sub { font-size: 0.58rem; color: #5A5035; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 24px; }
+/* ============================================================
+   HARMONY DEMO — synced with VERIDOSHÉ button system + fonts
+   ============================================================ */
 
-.mockup {
-  background: #121212;
-  border: 1px solid #1E1A12;
-  padding: 32px;
+.demo{
+  margin-top:44px;
+  padding:28px;
+  background:var(--card);
+  border:1px solid var(--border);
 }
-.mock-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
-.mock-logo { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 1.1rem; letter-spacing: 0.3em; text-transform: uppercase; }
-.mock-nav-links { display: flex; gap: 24px; }
-.mock-nav-links span { font-size: 0.58rem; letter-spacing: 0.2em; color: #7A6E5F; text-transform: uppercase; }
 
-.mock-hero { text-align: center; padding: 40px 0; border-top: 1px solid #1E1A12; border-bottom: 1px solid #1E1A12; margin-bottom: 32px; }
-.mock-eyebrow { font-size: 0.55rem; letter-spacing: 0.35em; color: #B8860B; text-transform: uppercase; margin-bottom: 16px; }
-.mock-h1 { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 2.2rem; font-weight: 300; letter-spacing: 0.1em; line-height: 1.2; margin-bottom: 16px; }
-.mock-h1 em { color: #C8A97E; font-style: italic; }
-.mock-p { font-size: 0.65rem; color: #E8D5B0; letter-spacing: 0.05em; line-height: 1.8; max-width: 360px; margin: 0 auto 28px; }
-.mock-btns { display: flex; gap: 12px; justify-content: center; }
-.btn-primary { background: #C8A97E; color: #0D0C08; font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 12px 28px; font-weight: 700; }
-.btn-outline { border: 1px solid #5C4A2A; color: #E8D5B0; font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 12px 28px; background: transparent; }
+.demo-title{
+  font-family:var(--fd);
+  color:var(--ivory);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
 
-.mock-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
-.mock-card { background: #2C2416; padding: 20px; }
-.mc-tag { font-size: 0.5rem; letter-spacing: 0.2em; color: #B8860B; text-transform: uppercase; margin-bottom: 10px; }
-.mc-title { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 1rem; margin-bottom: 6px; }
-.mc-text { font-size: 0.58rem; color: #7A6E5F; line-height: 1.6; }
-.mc-line { height: 1px; background: #5C4A2A; margin: 12px 0; }
-.mc-price { font-family: 'Cormorant Garamond', serif; color: #C8A97E; font-size: 1.1rem; }
+.demo-sub{
+  font-size:9px;
+  font-weight:600;
+  color:var(--muted);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+
+.mockup{
+  background:var(--black);
+  border:1px solid var(--border);
+  padding:32px;
+}
+
+.mock-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+  gap:20px;
+}
+
+.mock-logo{
+  font-family:var(--fd);
+  color:var(--ivory);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+}
+
+.mock-nav-links{
+  display:flex;
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+.mock-nav-links span{
+  font-family:var(--fd);
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:.20em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+.mock-hero{
+  text-align:center;
+  padding:48px 0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  margin-bottom:32px;
+}
+
+.mock-eyebrow{
+  font-family:var(--fd);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.30em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+
+.mock-h1{
+  font-family:var(--fs);
+  color:var(--ivory);
+  font-size:clamp(34px,4vw,54px);
+  font-weight:400;
+  letter-spacing:.04em;
+  line-height:1.08;
+  margin-bottom:18px;
+}
+
+.mock-h1 em{
+  color:var(--gold);
+  font-style:italic;
+  font-weight:400;
+}
+
+.mock-p{
+  font-family:var(--fb);
+  font-size:13px;
+  font-weight:300;
+  color:var(--body);
+  line-height:1.8;
+  max-width:520px;
+  margin:0 auto 30px;
+}
+
+.mock-btns{
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+/* buttons inside mockup use your real button system */
+.mock-btns .ui-btn{
+  min-width:auto;
+}
+
+.mock-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3px;
+}
+
+.mock-card{
+  background:#2C2416;
+  padding:22px 20px;
+  min-height:148px;
+}
+
+.mc-tag{
+  font-family:var(--fd);
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:.22em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.mc-title{
+  font-family:var(--fs);
+  color:var(--ivory);
+  font-size:27px;
+  font-weight:400;
+  line-height:1.15;
+  margin-bottom:8px;
+}
+
+.mc-text{
+  font-family:var(--fb);
+  font-size:12px;
+  font-weight:300;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.mc-line{
+  height:1px;
+  background:rgba(225,169,51,.24);
+  margin:14px 0;
+}
+
+.mc-price{
+  font-family:var(--fs);
+  color:var(--gold);
+  font-size:29px;
+  font-weight:400;
+  line-height:1;
+}
+
+/* responsive */
+@media(max-width:900px){
+  .mock-cards{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .mockup{
+    padding:22px;
+  }
+
+  .mock-nav{
+    flex-direction:column;
+    align-items:flex-start;
+    margin-bottom:28px;
+  }
+
+  .mock-hero{
+    padding:34px 0;
+  }
+
+  .mock-h1{
+    font-size:32px;
+  }
+
+  .mock-p{
+    font-size:12px;
+  }
+}
