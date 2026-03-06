@@ -809,3 +809,41 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   font-size:14px;
   line-height:1.1;
 }
+
+
+
+
+
+
+
+/* HARMONY DEMO */
+.demo { margin-top: 44px; }
+.demo-title { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 1.3rem; font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 6px; }
+.demo-sub { font-size: 0.58rem; color: #5A5035; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 24px; }
+
+.mockup {
+  background: #121212;
+  border: 1px solid #1E1A12;
+  padding: 32px;
+}
+.mock-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.mock-logo { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 1.1rem; letter-spacing: 0.3em; text-transform: uppercase; }
+.mock-nav-links { display: flex; gap: 24px; }
+.mock-nav-links span { font-size: 0.58rem; letter-spacing: 0.2em; color: #7A6E5F; text-transform: uppercase; }
+
+.mock-hero { text-align: center; padding: 40px 0; border-top: 1px solid #1E1A12; border-bottom: 1px solid #1E1A12; margin-bottom: 32px; }
+.mock-eyebrow { font-size: 0.55rem; letter-spacing: 0.35em; color: #B8860B; text-transform: uppercase; margin-bottom: 16px; }
+.mock-h1 { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 2.2rem; font-weight: 300; letter-spacing: 0.1em; line-height: 1.2; margin-bottom: 16px; }
+.mock-h1 em { color: #C8A97E; font-style: italic; }
+.mock-p { font-size: 0.65rem; color: #E8D5B0; letter-spacing: 0.05em; line-height: 1.8; max-width: 360px; margin: 0 auto 28px; }
+.mock-btns { display: flex; gap: 12px; justify-content: center; }
+.btn-primary { background: #C8A97E; color: #0D0C08; font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 12px 28px; font-weight: 700; }
+.btn-outline { border: 1px solid #5C4A2A; color: #E8D5B0; font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 12px 28px; background: transparent; }
+
+.mock-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.mock-card { background: #2C2416; padding: 20px; }
+.mc-tag { font-size: 0.5rem; letter-spacing: 0.2em; color: #B8860B; text-transform: uppercase; margin-bottom: 10px; }
+.mc-title { font-family: 'Cormorant Garamond', serif; color: #FDF6EA; font-size: 1rem; margin-bottom: 6px; }
+.mc-text { font-size: 0.58rem; color: #7A6E5F; line-height: 1.6; }
+.mc-line { height: 1px; background: #5C4A2A; margin: 12px 0; }
+.mc-price { font-family: 'Cormorant Garamond', serif; color: #C8A97E; font-size: 1.1rem; }
