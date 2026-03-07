@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
+<!-- Кнопка гамбургер -->
+<button class="hamburger" id="menuBtn" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- Тёмный оверлей -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+
+
 <div class="wrap">
 
 <!-- ══════════════════════════════════
@@ -1441,7 +1455,9 @@ Color:     Gold</div>
 
 
 
+
 <script>
+  // ── Tab navigation ──
   function go(id) {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
     document.querySelectorAll('.nl').forEach(l => l.classList.remove('on'));
@@ -1450,7 +1466,33 @@ Color:     Gold</div>
     const lnk = document.querySelector('.nl[onclick="go(\'' + id + '\')"]');
     if (lnk) lnk.classList.add('on');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Закрыть меню на мобиле после выбора
+    closeSidebar();
   }
+
+  // ── Mobile sidebar ──
+  const menuBtn  = document.getElementById('menuBtn');
+  const sidebar  = document.querySelector('nav.sidebar');
+  const overlay  = document.getElementById('navOverlay');
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    overlay.classList.add('on');
+    menuBtn.classList.add('open');
+  }
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('on');
+    menuBtn.classList.remove('open');
+  }
+
+  menuBtn.addEventListener('click', () => {
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  // ── Init ──
   go('cover');
 </script>
 </body>
