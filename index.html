@@ -27,6 +27,7 @@
   <span class="nl" onclick="go('type')">Typography</span>
   <span class="nl" onclick="go('spacing')">Spacing</span>
   <span class="nl" onclick="go('texture')">Visual Texture</span>
+  <span class="nl" onclick="go('gradients')">Gradients</span>
   <span class="nl" onclick="go('photo')">Photography</span>
   <div class="ng">Components</div>
   <span class="nl" onclick="go('pairings')">Color Pairings</span>
@@ -54,7 +55,7 @@
     <div class="cc"><div class="cclb">Products</div><div class="ccvl">GINesis · GINcognito</div></div>
     <div class="cc"><div class="cclb">Tagline</div><div class="ccvl">Truth Tastes Better.</div></div>
     <div class="cc"><div class="cclb">Theme</div><div class="ccvl">Dark-first always</div></div>
-    <div class="cc"><div class="cclb">Contact</div><div class="ccvl">partners@veridoshe.com</div></div>
+    <div class="cc"><div class="cclb">Contact</div><div class="ccvl"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="54243526203a312627142231263d303b273c317a373b39">[email&#160;protected]</a></div></div>
   </div>
 </div>
 
@@ -661,10 +662,153 @@ Color:     Gold</div>
 </div>
 
 <!-- ══════════════════════════════════
-     09 PHOTOGRAPHY
+     09 GRADIENTS
+══════════════════════════════════ -->
+<div id="gradients" class="tab">
+  <div class="ey">09 · Visual System</div>
+  <h2>Gradient <em>System</em></h2>
+  <div class="note">
+    <strong>Gradients are purposeful — not decorative.</strong> Use only the approved 6 gradients below via CSS class. Never create freeform colour gradients in UI. Transitions must always move between two colours from the brand system.
+  </div>
+
+  <div class="grad-grid">
+
+    <div class="grad-card grad-hero" style="color:var(--ivory)">
+      <div class="grad-name">Hero Dark</div>
+      <div class="grad-use">Hero backgrounds · Page overlays</div>
+      <div class="grad-code">.grad-hero<br>midnight → obsidian · 160°</div>
+    </div>
+
+    <div class="grad-card grad-warm" style="color:var(--ivory)">
+      <div class="grad-name">Warm Editorial</div>
+      <div class="grad-use">Cards · Feature sections · Callouts</div>
+      <div class="grad-code">.grad-warm<br>deep-umber → midnight · 135°</div>
+    </div>
+
+    <div class="grad-card grad-packaging" style="color:var(--ivory)">
+      <div class="grad-name">Packaging</div>
+      <div class="grad-use">Bottle mockups · Premium print</div>
+      <div class="grad-code">.grad-packaging<br>midnight → deep-umber → gold veil · 135°</div>
+    </div>
+
+    <div class="grad-card grad-ginesis" style="color:var(--ivory)">
+      <div class="grad-name">GINesis</div>
+      <div class="grad-use">GINesis product backgrounds only</div>
+      <div class="grad-code">.grad-ginesis<br>dark-juniper → juniper · 160°</div>
+    </div>
+
+    <div class="grad-card grad-champagne" style="color:var(--obsidian)">
+      <div class="grad-name">Champagne Light</div>
+      <div class="grad-use">Print · Light-theme headers</div>
+      <div class="grad-code">.grad-champagne<br>champagne → ivory · 160°</div>
+    </div>
+
+    <div class="grad-card" style="background:linear-gradient(180deg, transparent 40%, rgba(200,169,126,.08) 100%);background-color:var(--midnight);color:var(--ivory)">
+      <div class="grad-name">Gold Veil</div>
+      <div class="grad-use">Image overlays · Section fades</div>
+      <div class="grad-code">.grad-gold-veil<br>transparent → gold 8% · 180°</div>
+    </div>
+
+  </div>
+
+  <div class="sp-8"></div>
+  <h3>CSS Gradient Tokens</h3>
+<pre class="code-block"><span class="tk-comment">/* ── Gradient Classes — copy into your CSS ── */</span>
+
+<span class="tk-comment">/* Hero — page backgrounds, large sections */</span>
+<span class="tk-key">.grad-hero</span> {
+  background: linear-gradient(<span class="tk-val">160deg</span>, <span class="tk-val">var(--midnight)</span> <span class="tk-val">0%</span>, <span class="tk-val">var(--obsidian)</span> <span class="tk-val">100%</span>);
+}
+
+<span class="tk-comment">/* Warm editorial — cards, callouts */</span>
+<span class="tk-key">.grad-warm</span> {
+  background: linear-gradient(<span class="tk-val">135deg</span>, <span class="tk-val">var(--deep-umber)</span> <span class="tk-val">0%</span>, <span class="tk-val">var(--midnight)</span> <span class="tk-val">100%</span>);
+}
+
+<span class="tk-comment">/* Packaging — bottle mockups, premium print */</span>
+<span class="tk-key">.grad-packaging</span> {
+  background: linear-gradient(<span class="tk-val">135deg</span>,
+    <span class="tk-val">var(--midnight)</span>          <span class="tk-val">0%</span>,
+    <span class="tk-val">var(--deep-umber)</span>        <span class="tk-val">60%</span>,
+    <span class="tk-val">rgba(200,169,126,.10)</span>   <span class="tk-val">100%</span>);
+}
+
+<span class="tk-comment">/* GINesis — product context only */</span>
+<span class="tk-key">.grad-ginesis</span> {
+  background: linear-gradient(<span class="tk-val">160deg</span>, <span class="tk-val">var(--dark-juniper)</span> <span class="tk-val">0%</span>, <span class="tk-val">var(--juniper)</span> <span class="tk-val">100%</span>);
+}
+
+<span class="tk-comment">/* Champagne light — print headers */</span>
+<span class="tk-key">.grad-champagne</span> {
+  background: linear-gradient(<span class="tk-val">160deg</span>, <span class="tk-val">var(--champagne)</span> <span class="tk-val">0%</span>, <span class="tk-val">var(--ivory)</span> <span class="tk-val">100%</span>);
+}
+
+<span class="tk-comment">/* Gold veil overlay — image fades */</span>
+<span class="tk-key">.grad-gold-veil</span> {
+  background: linear-gradient(<span class="tk-val">180deg</span>, transparent <span class="tk-val">40%</span>, <span class="tk-val">rgba(200,169,126,.08)</span> <span class="tk-val">100%</span>);
+}</pre>
+
+  <div class="sp-8"></div>
+
+  <div class="demo">
+    <div class="demo-label">Gradients in Context</div>
+    <div class="demo-body" style="display:grid;grid-template-columns:1fr 1fr;gap:2px">
+
+      <div style="background:linear-gradient(160deg,var(--midnight) 0%,var(--obsidian) 100%);padding:32px 28px;border:1px solid var(--border)">
+        <div style="font-size:8px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Hero Dark · grad-hero</div>
+        <div style="font-family:var(--sans);font-size:20px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ivory);line-height:1.1">ZERO-PROOF.<br>ALL THE FLAVOR.</div>
+        <div style="font-size:11px;color:var(--champagne);margin-top:12px;letter-spacing:.04em">Page hero · Full-bleed section</div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,var(--deep-umber) 0%,var(--midnight) 100%);padding:32px 28px;border:1px solid var(--border)">
+        <div style="font-size:8px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Warm Editorial · grad-warm</div>
+        <div style="font-family:var(--serif);font-size:22px;font-style:italic;color:var(--gold);line-height:1.2">of existence.</div>
+        <div style="font-size:11px;color:var(--champagne);margin-top:12px;letter-spacing:.04em">Feature cards · Quote callouts</div>
+      </div>
+
+      <div style="background:linear-gradient(160deg,var(--dark-juniper) 0%,var(--juniper) 100%);padding:32px 28px">
+        <div style="font-size:8px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:rgba(253,246,234,.6);margin-bottom:12px">GINesis · grad-ginesis</div>
+        <div style="font-family:var(--sans);font-size:20px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ivory);line-height:1.1">BRIGHT.<br>BOTANICAL.</div>
+        <div style="font-size:11px;color:rgba(253,246,234,.75);margin-top:12px;letter-spacing:.04em">GINesis product sections only</div>
+      </div>
+
+      <div style="background:linear-gradient(160deg,var(--champagne) 0%,var(--ivory) 100%);padding:32px 28px;border:1px solid rgba(0,0,0,.07)">
+        <div style="font-size:8px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--dark-gold);margin-bottom:12px">Champagne Light · grad-champagne</div>
+        <div style="font-family:var(--sans);font-size:20px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--obsidian);line-height:1.1">TRUTH TASTES<br>BETTER.</div>
+        <div style="font-size:11px;color:var(--deep-umber);margin-top:12px;letter-spacing:.04em">Print · Packaging inserts</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sp-8"></div>
+  <div class="dd">
+    <div class="ddb do">
+      <div class="ddt">✓ Gradient Do</div>
+      <ul class="ddl">
+        <li>Only move between two brand colours</li>
+        <li>Direction: 135° or 160° (diagonal or near-vertical)</li>
+        <li>Use approved classes — never inline ad-hoc gradients</li>
+        <li>GINesis gradient in GINesis context only</li>
+      </ul>
+    </div>
+    <div class="ddb dont">
+      <div class="ddt">✕ Gradient Don't</div>
+      <ul class="ddl">
+        <li>Never include colours outside the brand palette</li>
+        <li>No rainbow, neon, or high-saturation gradients</li>
+        <li>No horizontal gradients (0°) except gold-veil overlay</li>
+        <li>Never use gradients on button backgrounds</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     10 PHOTOGRAPHY
 ══════════════════════════════════ -->
 <div id="photo" class="tab">
-  <div class="ey">09 · Visual System</div>
+  <div class="ey">10 · Visual System</div>
   <h2>Photography <em>Guidelines</em></h2>
   <p>Every image must reinforce the brand: premium, editorial, tactile. No stock photography clichés.</p>
 
@@ -1266,12 +1410,14 @@ Color:     Gold</div>
     </tbody>
   </table>
   <div class="note" style="margin-top:20px">
-    <strong>Request assets:</strong> Rahul 'Raj' Sheth · raj@veridoshe.com · +1 310 420 4376
+    <strong>Request assets:</strong> Rahul 'Raj' Sheth · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96e4f7fcd6e0f3e4fff2f9e5fef3b8f5f9fb">[email&#160;protected]</a> · +1 310 420 4376
   </div>
 </div>
 
 </main>
 </div>
+
+
 
 <script>
   function go(id) {

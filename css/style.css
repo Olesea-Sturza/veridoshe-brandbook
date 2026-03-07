@@ -425,10 +425,11 @@ td:first-child { color:var(--gold); font-weight:500; }
   margin-bottom:  7px;
 }
 .sw-hex {
-  font-family:   var(--serif);
-  font-size:     1.2rem;              /* bigger = more readable */
-  letter-spacing:.03em;
+  font-family:   var(--mono);         /* monospace for all hex values — consistent, technical */
+  font-size:     1.05rem;
+  letter-spacing:.04em;
   margin-bottom: 5px;
+  font-weight:   400;
 }
 .sw-use {
   font-size:      10px;               /* bumped from 9 */
@@ -850,12 +851,33 @@ td:first-child { color:var(--gold); font-weight:500; }
 .btn-ghost { border-color:var(--ivory-20); color:var(--ivory); }
 .btn-ghost:hover { border-color:var(--ivory); background:var(--ivory-08); }
 
-/* Juniper / GINesis */
-.btn-juniper { background:var(--juniper); border-color:var(--gold-20); color:var(--ivory); isolation:isolate; transition:color .4s; }
-.btn-juniper::after { content:""; position:absolute; bottom:-80px; left:50%; transform:translateX(-50%); width:200%; padding-bottom:200%; background:rgba(200,169,126,.16); border-radius:45%; transition:bottom .5s var(--ease-in); z-index:0; animation:liquid 6s linear infinite; }
+/* Juniper / GINesis
+   The liquid wave needs overflow:visible on the button itself.
+   .btn-base sets overflow:hidden — we override it here.          */
+.btn-juniper {
+  background:   var(--juniper);
+  border-color: var(--gold-20);
+  color:        var(--ivory);
+  overflow:     hidden;             /* keep clipped but use inset pseudo */
+  transition:   color .4s, background .4s var(--ease);
+}
+.btn-juniper::before {              /* the liquid fill — rises from bottom inside clipped area */
+  content:          "";
+  position:         absolute;
+  bottom:           -100%;
+  left:             -10%;
+  width:            120%;
+  height:           200%;
+  background:       rgba(200,169,126,.22);
+  border-radius:    40% 40% 0 0;
+  transition:       bottom .55s var(--ease-in);
+  z-index:          0;
+  transform-origin: bottom center;
+}
 .btn-juniper span { position:relative; z-index:1; }
+.btn-juniper:hover::before { bottom:-15%; }
+.btn-juniper:hover { color:var(--ivory); }
 @keyframes liquid { to { transform:translateX(-50%) rotate(360deg); } }
-.btn-juniper:hover::after { bottom:-20px; }
 
 /* Button card grid */
 .btn-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:24px; }
@@ -980,15 +1002,17 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
    PHOTOGRAPHY
    ════════════════════════════════════════════════════════════ */
 .photo-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-top:24px; }
-.photo-card { position:relative; overflow:hidden; min-height:260px; }
+.photo-card { position:relative; overflow:hidden; }
 .photo-placeholder {
-  width:100%; height:100%; min-height:260px;
+  width:100%;
+  height:280px;
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap:14px; background:var(--deep-umber);
+  padding-bottom:60px;              /* leave room for caption — no overlap */
 }
 .photo-icon  { font-size:44px; opacity:.22; }
 .photo-label { font-size:9px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--champagne); }
-.photo-caption { position:absolute; bottom:0; left:0; right:0; padding:14px 18px; background:rgba(13,12,8,.9); border-top:1px solid var(--border); }
+.photo-caption { padding:14px 18px; background:rgba(13,12,8,.95); border-top:1px solid var(--border); }
 .photo-caption-title { font-size:9px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin-bottom:3px; }
 .photo-caption-text  { font-size:11px; color:var(--ivory); }
 
@@ -1060,3 +1084,19 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
   .sp-row { grid-template-columns:80px 1fr; }
   .sp-bar-wrap { width:80px; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   GRADIENTS — approved, purposeful, no decorative use
+   ════════════════════════════════════════════════════════════ */
+.grad-hero        { background: linear-gradient(160deg, var(--midnight) 0%, var(--obsidian) 100%); }
+.grad-warm        { background: linear-gradient(135deg, var(--deep-umber) 0%, var(--midnight) 100%); }
+.grad-gold-veil   { background: linear-gradient(180deg, transparent 40%, rgba(200,169,126,.08) 100%); }
+.grad-ginesis     { background: linear-gradient(160deg, var(--dark-juniper) 0%, var(--juniper) 100%); }
+.grad-packaging   { background: linear-gradient(135deg, var(--midnight) 0%, var(--deep-umber) 60%, rgba(200,169,126,.10) 100%); }
+.grad-champagne   { background: linear-gradient(160deg, var(--champagne) 0%, var(--ivory) 100%); }
+
+.grad-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:20px; }
+.grad-card { min-height:160px; padding:22px 18px 18px; display:flex; flex-direction:column; justify-content:flex-end; position:relative; }
+.grad-name { font-size:11px; font-weight:700; letter-spacing:var(--ls-label); text-transform:uppercase; margin-bottom:5px; }
+.grad-use  { font-size:10px; opacity:.75; line-height:1.5; text-transform:uppercase; letter-spacing:.04em; }
+.grad-code { font-family:var(--mono); font-size:9px; margin-top:6px; opacity:.55; letter-spacing:.02em; }
