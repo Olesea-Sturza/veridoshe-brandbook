@@ -1206,4 +1206,6 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
   margin-top:14px;
   border:1px solid var(--border);
   display:block;
+ 
+
 }
