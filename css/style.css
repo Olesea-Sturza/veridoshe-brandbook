@@ -291,7 +291,7 @@ main { margin-left:var(--sidebar); flex:1; min-width:0; }
 
 .cgrid {
   display:               grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
   border-top:    1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding:       28px 0;
