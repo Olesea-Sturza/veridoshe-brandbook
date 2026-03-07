@@ -1342,6 +1342,6 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
   display:     flex;
   align-items: center;
 }
-mock-cards_mignih{
-  color:var(--midnight);
+.mock-cards_migniht{
+  background-color:var(--midnight);
 }
