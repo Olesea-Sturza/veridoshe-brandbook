@@ -16,6 +16,7 @@
 --bronze: #5C4A2A;
 --champagne: #E8D5B0;
 --juniper: #6b8c72;
+--darkjuniper: #0d1d10;
 
 /* font */
 
@@ -1010,12 +1011,7 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   padding:22px 20px;
   min-height:148px;
 }
-.mock-card_ginesis{
-  
-  background:var(--juniper);
-  
-  color: #121212;
-}
+
 
 /* Montserrat */
 .mc-tag{
@@ -1023,7 +1019,7 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   font-size:8px;
   font-weight:700;
   letter-spacing:.22em;
-  color:var(--gold);
+  color:var(--darkgold);
   text-transform:uppercase;
   margin-bottom:10px;
 }
@@ -1043,14 +1039,10 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   font-family:var(--fb);
   font-size:12px;
   font-weight:300;
-  color:var(--bronze);
+  color:var(--champagne);
   line-height:1.65;
 }
-.mc-text_ginesis{
-  
-  color:#121212;
-  
-}
+
 
 .mc-line{
   height:1px;
@@ -1066,6 +1058,7 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   font-weight:300;
   line-height:1;
 }
+
 
 @media(max-width:900px){
   .mock-cards{
@@ -1095,4 +1088,27 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   .mock-p{
     font-size:12px;
   }
+}
+
+
+.mc-tag_ginesis{
+  color:var(--darkjuniper);
+}
+.mock-card_ginesis{
+  
+  background:var(--juniper);
+  
+    color:var(--obsidian);
+}
+.mc-price_ginesis{
+  color:var(--ivory);
+}
+.mc-text_ginesis{
+  
+  color:var(--darkjuniper);
+  
+}
+.mc-line_ginesis{
+  background:var(--darkjuniper);
+  
 }
