@@ -10,290 +10,247 @@
 <body>
 <div class="wrap">
 
-<!-- ══════════════════════════════════════════════════════
+<!-- ══════════════════════════════════
      SIDEBAR
-══════════════════════════════════════════════════════ -->
+══════════════════════════════════ -->
 <nav class="sidebar">
   <div class="nb">
     <img src="images/veridosheVlogoandmain.svg" alt="Veridoshé">
   </div>
-
   <div class="ng">Foundation</div>
-  <span class="nl" onclick="show('cover')">Overview</span>
-  <span class="nl" onclick="show('story')">Brand Story</span>
-  <span class="nl" onclick="show('logo')">Logo &amp; Mark</span>
-  <span class="nl" onclick="show('logo-specs')">Logo Specs</span>
-
+  <span class="nl" onclick="go('cover')">Overview</span>
+  <span class="nl" onclick="go('story')">Brand Story</span>
+  <span class="nl" onclick="go('logo')">Logo &amp; Mark</span>
+  <span class="nl" onclick="go('logo-specs')">Logo Specs</span>
   <div class="ng">Visual System</div>
-  <span class="nl" onclick="show('colors')">Colors</span>
-  <span class="nl" onclick="show('type')">Typography</span>
-  <span class="nl" onclick="show('spacing')">Spacing</span>
-  <span class="nl" onclick="show('imagery')">Visual Texture</span>
-  <span class="nl" onclick="show('photo')">Photography</span>
-
+  <span class="nl" onclick="go('colors')">Colors</span>
+  <span class="nl" onclick="go('type')">Typography</span>
+  <span class="nl" onclick="go('spacing')">Spacing</span>
+  <span class="nl" onclick="go('texture')">Visual Texture</span>
+  <span class="nl" onclick="go('photo')">Photography</span>
   <div class="ng">Components</div>
-  <span class="nl" onclick="show('pairings')">Color Pairings</span>
-  <span class="nl" onclick="show('buttons')">Buttons</span>
-  <span class="nl" onclick="show('forms')">Forms</span>
-
+  <span class="nl" onclick="go('pairings')">Color Pairings</span>
+  <span class="nl" onclick="go('buttons')">Buttons</span>
+  <span class="nl" onclick="go('forms')">Forms</span>
   <div class="ng">Marketing</div>
-  <span class="nl" onclick="show('marketing')">Marketing</span>
-
+  <span class="nl" onclick="go('marketing')">Marketing</span>
   <div class="ng">Developer</div>
-  <span class="nl" onclick="show('tokens')">CSS Tokens</span>
-  <span class="nl" onclick="show('rules')">Rules</span>
-  <span class="nl" onclick="show('assets')">Assets</span>
+  <span class="nl" onclick="go('tokens')">CSS Tokens</span>
+  <span class="nl" onclick="go('rules')">Rules</span>
+  <span class="nl" onclick="go('assets')">Assets</span>
 </nav>
 
 <main>
 
-<!-- ══════════════════════════════════════════════════════
-     01 · COVER
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     01 COVER
+══════════════════════════════════ -->
 <div id="cover" class="tab">
   <div class="ey">Brand Book — 2026</div>
-  <img src="images/verodoshe main logo.svg" alt="Veridoshé wordmark" style="height:70px;margin-bottom:32px">
+  <img src="images/verodoshe main logo.svg" alt="Veridoshé wordmark" style="height:64px;margin-bottom:32px">
   <div class="ch1"><span>Brand</span> System</div>
   <div class="csub">Premium Zero-Proof Spirits</div>
   <div class="cgrid">
-    <div class="cc">
-      <div class="cclb">Products</div>
-      <div class="ccvl">GINesis &middot; GINcognito</div>
-    </div>
-    <div class="cc">
-      <div class="cclb">Tagline</div>
-      <div class="ccvl">Truth Tastes Better.</div>
-    </div>
-    <div class="cc">
-      <div class="cclb">Theme</div>
-      <div class="ccvl">Dark-first always</div>
-    </div>
-    <div class="cc">
-      <div class="cclb">Contact</div>
-      <div class="ccvl">partners@veridoshe.com</div>
-    </div>
+    <div class="cc"><div class="cclb">Products</div><div class="ccvl">GINesis · GINcognito</div></div>
+    <div class="cc"><div class="cclb">Tagline</div><div class="ccvl">Truth Tastes Better.</div></div>
+    <div class="cc"><div class="cclb">Theme</div><div class="ccvl">Dark-first always</div></div>
+    <div class="cc"><div class="cclb">Contact</div><div class="ccvl">partners@veridoshe.com</div></div>
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     02 · BRAND STORY
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     02 BRAND STORY
+══════════════════════════════════ -->
 <div id="story" class="tab">
   <div class="ey">02 · Foundation</div>
   <h2>Brand <em>Story</em></h2>
-
   <div class="note">
     <strong>Veridoshé is a luxury zero-proof spirit crafted to deliver the full cocktail experience without compromise.</strong>
     Our flagship expressions — GINesis and GINcognito — deliver seamless mixability across gin &amp; tonics,
-    margaritas, martinis, and more. As today's Millennial &amp; Gen Z consumers drink less, they're seeking premium,
-    authentic, and health-conscious alternatives. Veridoshé isn't just a spirit — it's a movement redefining
-    nightlife, culture, and conscious choice.
+    margaritas, martinis, and more. As today's Millennial &amp; Gen Z consumers drink less, they're seeking
+    premium, authentic, and health-conscious alternatives. Veridoshé isn't just a spirit — it's a movement
+    redefining nightlife, culture, and conscious choice.
   </div>
-
   <hr>
-
   <h2 class="sm">Tagline</h2>
-  <p class="caps38" style="font-size:16px;color:var(--gold)">Truth Tastes Better.</p>
-
+  <p style="font-size:16px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)">Truth Tastes Better.</p>
   <hr>
-
-  <h2 class="sm">Brand descriptor</h2>
-  <p>Premium Zero-Proof Spirits</p>
-
-  <hr>
-
   <h2 class="sm">Brand Principles</h2>
   <table>
     <thead><tr><th>Principle</th><th>Definition</th></tr></thead>
     <tbody>
-      <tr><td>Mission</td><td>To redefine premium cocktail culture by creating sophisticated zero-proof spirits.</td></tr>
+      <tr><td>Mission</td><td>Redefine premium cocktail culture by creating sophisticated zero-proof spirits.</td></tr>
       <tr><td>Vision</td><td>A world where premium cocktails are defined by flavor and experience — not alcohol.</td></tr>
-      <tr><td>Values</td><td>Sophistication &middot; Authenticity &middot; Conscious enjoyment &middot; Innovation &middot; Premium quality</td></tr>
-      <tr><td>Tone of voice</td><td>Confident &middot; Minimal &middot; Intelligent &middot; Refined &middot; Modern. Avoid playful tone.</td></tr>
+      <tr><td>Values</td><td>Sophistication · Authenticity · Conscious enjoyment · Innovation · Premium quality</td></tr>
+      <tr><td>Tone of voice</td><td>Confident · Minimal · Intelligent · Refined · Modern. Avoid playful tone.</td></tr>
     </tbody>
   </table>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     03 · LOGO & MARK
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     03 LOGO & MARK
+══════════════════════════════════ -->
 <div id="logo" class="tab">
   <div class="ey">03 · Identity</div>
   <h2>Logo &amp; <em>Mark</em></h2>
-
   <div class="note">
-    <strong>The logo is an SVG file — not a font.</strong> Never recreate from type. Request the official .svg from the brand team.
+    <strong>The logo is always an SVG file — never recreate from type.</strong>
+    Request the official .svg from the brand team.
   </div>
 
-  <!-- Logo usage on dark -->
   <div class="demo">
     <div class="demo-label">Approved — Dark Background</div>
     <div class="lgrid">
-      <div class="lcell lcell-dark">
-        <img src="images/veridosheVlogoandmain.svg" alt="Primary logo" class="logo-swatch">
-        <div class="llbl" style="color:var(--bronze)">V-mark + Wordmark</div>
+      <div class="lcell lc-dark">
+        <img src="images/veridosheVlogoandmain.svg" alt="Primary logo">
+        <div class="llbl llbl-on-dark">V-mark + Wordmark</div>
       </div>
-      <div class="lcell lcell-dark" style="justify-content:flex-end">
-        <img src="images/verodoshe main logo.svg" alt="Wordmark" class="logo-swatch">
-        <div class="llbl" style="color:var(--bronze)">Wordmark only</div>
+      <div class="lcell lc-dark">
+        <img src="images/verodoshe main logo.svg" alt="Wordmark">
+        <div class="llbl llbl-on-dark">Wordmark only</div>
       </div>
-      <div class="lcell lcell-dark">
-        <img src="images/veridoshe V logo.svg" alt="V mark" class="logo-swatch">
-        <div class="llbl" style="color:var(--bronze)">V-mark only</div>
+      <div class="lcell lc-dark">
+        <img src="images/veridoshe V logo.svg" alt="V mark">
+        <div class="llbl llbl-on-dark">V-mark only</div>
       </div>
     </div>
   </div>
 
-  <!-- Logo on light -->
   <div class="demo">
     <div class="demo-label">Approved — Light Background</div>
     <div class="lgrid">
-      <div class="lcell" style="background:var(--ivory)">
-        <img src="images/veridosheVlogoandmain.svg" alt="Primary logo dark" class="logo-swatch" style="filter:brightness(0)">
-        <div class="llbl lwm-dark">V-mark + Wordmark</div>
+      <!-- Ivory bg: logo must use obsidian/dark version -->
+      <div class="lcell lc-light">
+        <img src="images/veridosheVlogoandmain.svg" alt="Primary on ivory" style="filter:brightness(0)">
+        <div class="llbl llbl-on-light">V-mark + Wordmark</div>
       </div>
-      <div class="lcell" style="background:var(--ivory)">
-        <img src="images/verodoshe main logo.svg" alt="Wordmark dark" class="logo-swatch" style="filter:brightness(0)">
-        <div class="llbl lwm-dark">Wordmark — black</div>
+      <div class="lcell lc-light">
+        <img src="images/verodoshe main logo.svg" alt="Wordmark on ivory" style="filter:brightness(0)">
+        <div class="llbl llbl-on-light">Wordmark — Black</div>
       </div>
-      <div class="lcell" style="background:var(--champagne)">
-        <img src="images/veridosheVlogoandmain.svg" alt="Primary logo" class="logo-swatch">
-        <div class="llbl lwm-dark">On Champagne</div>
+      <!-- Champagne: logo uses dark (obsidian) version — NOT ivory/gold which fails contrast -->
+      <div class="lcell lc-champ">
+        <img src="images/veridosheVlogoandmain.svg" alt="Logo on champagne" style="filter:brightness(0)">
+        <div class="llbl llbl-on-light">On Champagne</div>
       </div>
     </div>
   </div>
 
   <div class="sp-8"></div>
-  <h2 class="sm">Usage Rules</h2>
   <table>
     <thead><tr><th>Rule</th><th>Spec</th></tr></thead>
     <tbody>
       <tr><td>File format</td><td>Primary: <code>.svg</code> — Raster only when required</td></tr>
-      <tr><td>Minimum size</td><td>80px on screen &middot; 25mm on print</td></tr>
-      <tr><td>Tagline lockup</td><td>Optional — letter-spacing .26em, all caps, below wordmark</td></tr>
+      <tr><td>Minimum size</td><td>80px on screen · 25mm on print</td></tr>
       <tr><td>Clear space</td><td>Height of the V symbol on all sides</td></tr>
       <tr><td>É accent</td><td>Mandatory — never VERIDOSHE without É</td></tr>
+      <tr><td>Tagline lockup</td><td>Optional — letter-spacing .26em, all caps, below wordmark</td></tr>
     </tbody>
   </table>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     04 · LOGO SPECS
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     04 LOGO SPECS
+══════════════════════════════════ -->
 <div id="logo-specs" class="tab">
   <div class="ey">04 · Identity</div>
   <h2>Logo <em>Specs</em></h2>
-
   <div class="note">
-    <h3>Logo with symbol (V + wordmark)</h3>
-    <strong>Clear space:</strong> x = height of the V symbol. Maintain on all sides.
-    <hr>
-    <h3>Wordmark only (VERIDOSHÉ)</h3>
-    <strong>Clear space:</strong> x = height of the letter O
+    <h3>Clear space</h3>
+    x = height of V symbol. Maintain on all four sides. Never crop or overflow.
   </div>
 
-  <!-- Clear space diagram -->
   <div class="demo">
     <div class="demo-label">Clear Space Diagram</div>
     <div class="svg-wrap">
       <svg viewBox="0 0 520 220" width="100%" height="220" role="img" aria-label="Clear space diagram">
-        <rect x="0" y="0" width="520" height="220" fill="transparent"/>
         <rect x="120" y="40" width="280" height="140" fill="rgba(200,169,126,.05)" stroke="rgba(200,169,126,.35)" stroke-width="2"/>
         <rect x="190" y="85" width="140" height="50" fill="rgba(0,0,0,.2)" stroke="rgba(253,246,234,.3)" stroke-width="1.5"/>
-        <text x="260" y="118" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="13" font-weight="600" fill="#FDF6EA" letter-spacing="3">VERIDOSHÉ</text>
+        <text x="260" y="118" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="13" font-weight="600" fill="#FDF6EA" letter-spacing="3">VERIDOSHÉ</text>
         <line x1="120" y1="40"  x2="190" y2="85"  stroke="rgba(200,169,126,.5)" stroke-width="1.5" stroke-dasharray="5 5"/>
         <line x1="400" y1="40"  x2="330" y2="85"  stroke="rgba(200,169,126,.5)" stroke-width="1.5" stroke-dasharray="5 5"/>
         <line x1="120" y1="180" x2="190" y2="135" stroke="rgba(200,169,126,.5)" stroke-width="1.5" stroke-dasharray="5 5"/>
         <line x1="400" y1="180" x2="330" y2="135" stroke="rgba(200,169,126,.5)" stroke-width="1.5" stroke-dasharray="5 5"/>
-        <text x="130" y="30"  font-family="Courier New" font-size="12" fill="rgba(200,169,126,.8)">X</text>
-        <text x="383" y="30"  font-family="Courier New" font-size="12" fill="rgba(200,169,126,.8)">X</text>
-        <text x="130" y="208" font-family="Courier New" font-size="12" fill="rgba(200,169,126,.8)">X</text>
-        <text x="383" y="208" font-family="Courier New" font-size="12" fill="rgba(200,169,126,.8)">X</text>
+        <text x="256" y="30"  font-family="Courier New" font-size="11" fill="rgba(200,169,126,.9)" text-anchor="middle">X — clear space</text>
+        <text x="80"  y="115" font-family="Courier New" font-size="11" fill="rgba(200,169,126,.9)" text-anchor="middle">X</text>
+        <text x="440" y="115" font-family="Courier New" font-size="11" fill="rgba(200,169,126,.9)" text-anchor="middle">X</text>
+        <text x="256" y="210" font-family="Courier New" font-size="11" fill="rgba(200,169,126,.9)" text-anchor="middle">X</text>
       </svg>
     </div>
   </div>
 
-  <!-- Incorrect usage -->
   <div class="demo">
     <div class="demo-label">Incorrect Usage — Never Do This</div>
     <div class="lgrid">
-      <div class="lcell lcell-dark lcell-error">
+      <div class="lcell lc-dark lc-err">
         <div class="lwm lwm-stretch">VERIDOSHÉ</div>
-        <div class="llbl llbl-error">✕ Stretched</div>
+        <div class="llbl llbl-err">✕ Stretched</div>
       </div>
-      <div class="lcell lcell-dark lcell-error">
+      <div class="lcell lc-dark lc-err">
         <div class="lwm lwm-rotate">VERIDOSHÉ</div>
-        <div class="llbl llbl-error">✕ Rotated</div>
+        <div class="llbl llbl-err">✕ Rotated</div>
       </div>
-      <div class="lcell lcell-light lcell-error">
+      <div class="lcell lc-light lc-err">
         <div class="lwm lwm-shadow">VERIDOSHÉ</div>
-        <div class="llbl llbl-error-dark">✕ Drop shadow</div>
+        <div class="llbl llbl-err-lgt">✕ Drop shadow</div>
       </div>
-      <div class="lcell lcell-dark lcell-error">
+      <div class="lcell lc-dark lc-err">
         <div class="lwm lwm-gradient">VERIDOSHÉ</div>
-        <div class="llbl llbl-error">✕ Recolored</div>
+        <div class="llbl llbl-err">✕ Recoloured</div>
       </div>
-      <div class="lcell lcell-dark lcell-error">
-        <div class="lwm" style="color:var(--gold)">VERIDOSHE</div>
-        <div class="llbl llbl-error">✕ Missing É</div>
+      <div class="lcell lc-dark lc-err">
+        <div class="lwm">VERIDOSHE</div>
+        <div class="llbl llbl-err">✕ Missing É</div>
       </div>
-      <div class="lcell lcell-pattern lcell-error">
-        <div class="lwm" style="color:var(--gold)">VERIDOSHÉ</div>
-        <div class="llbl llbl-error">✕ Busy background</div>
+      <div class="lcell lc-pattern lc-err">
+        <div class="lwm">VERIDOSHÉ</div>
+        <div class="llbl llbl-err">✕ Busy background</div>
       </div>
-    </div>
-    <div class="note" style="margin-top:16px">
-      <strong>Always preserve:</strong> proportions, approved colors, and the É accent. Never add effects.
     </div>
   </div>
 
   <table>
     <thead><tr><th>Element</th><th>Digital minimum</th><th>Print minimum</th></tr></thead>
     <tbody>
-      <tr><td>Full lockup (V + wordmark)</td><td>160px width</td><td>50mm width</td></tr>
+      <tr><td>Full lockup</td><td>160px width</td><td>50mm width</td></tr>
       <tr><td>Wordmark only</td><td>80px width</td><td>25mm width</td></tr>
-      <tr><td>V-mark icon only</td><td>32px width</td><td>10mm width</td></tr>
+      <tr><td>V-mark icon</td><td>32px width</td><td>10mm width</td></tr>
     </tbody>
   </table>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     05 · COLORS
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     05 COLORS
+══════════════════════════════════ -->
 <div id="colors" class="tab">
   <div class="ey">05 · Visual System</div>
   <h2>Colour <em>System</em></h2>
   <p>9 defined colours. Everything else is an opacity variant — no new hues without brand approval.</p>
 
-  <!-- Primary palette -->
-  <h3 style="margin-top:28px;margin-bottom:0">Primary Palette</h3>
+  <div class="swatch-title">Primary Palette</div>
   <div class="swatch-grid">
-    <div class="sw sw-on-dark" style="background:var(--obsidian)">
+    <div class="sw sw-obsidian">
       <span class="sw-badge">Primary</span>
       <div class="sw-name">Obsidian</div>
       <div class="sw-hex">#0D0C08</div>
       <div class="sw-use">Page Background</div>
       <div class="sw-cmyk">C0 · M8 · Y38 · K95</div>
     </div>
-    <div class="sw sw-on-light" style="background:var(--gold)">
+    <div class="sw sw-gold">
       <span class="sw-badge">Primary</span>
       <div class="sw-name">Gold</div>
       <div class="sw-hex">#C8A97E</div>
       <div class="sw-use">Hero Accent</div>
       <div class="sw-cmyk">C0 · M16 · Y37 · K22</div>
     </div>
-    <div class="sw sw-on-light" style="background:var(--ivory);border:1px solid rgba(0,0,0,.06)">
+    <div class="sw sw-ivory">
       <span class="sw-badge">Primary</span>
       <div class="sw-name">Ivory</div>
       <div class="sw-hex">#FDF6EA</div>
       <div class="sw-use">Text on Dark</div>
       <div class="sw-cmyk">C0 · M3 · Y7 · K1</div>
     </div>
-    <div class="sw sw-on-gold" style="background:var(--midnight)">
+    <div class="sw sw-midnight">
       <span class="sw-badge">Primary</span>
       <div class="sw-name">Midnight</div>
       <div class="sw-hex">#121212</div>
@@ -302,31 +259,30 @@
     </div>
   </div>
 
-  <!-- Secondary palette -->
-  <h3 style="margin-top:24px;margin-bottom:0">Secondary Palette</h3>
+  <div class="swatch-title">Secondary Palette</div>
   <div class="swatch-grid">
-    <div class="sw sw-on-dark" style="background:var(--deep-umber)">
+    <div class="sw sw-deep-umber">
       <span class="sw-badge">Secondary</span>
       <div class="sw-name">Deep Umber</div>
       <div class="sw-hex">#2C2416</div>
       <div class="sw-use">Card Backgrounds</div>
       <div class="sw-cmyk">C0 · M18 · Y50 · K83</div>
     </div>
-    <div class="sw sw-on-light" style="background:var(--dark-gold)">
+    <div class="sw sw-dark-gold">
       <span class="sw-badge">Secondary</span>
       <div class="sw-name">Dark Gold</div>
       <div class="sw-hex">#B8860B</div>
       <div class="sw-use">Active / Hover States</div>
       <div class="sw-cmyk">C0 · M27 · Y94 · K28</div>
     </div>
-    <div class="sw sw-on-dark" style="background:var(--bronze)">
+    <div class="sw sw-bronze">
       <span class="sw-badge">Secondary</span>
       <div class="sw-name">Bronze</div>
       <div class="sw-hex">#5C4A2A</div>
       <div class="sw-use">Borders / Dividers</div>
       <div class="sw-cmyk">C0 · M20 · Y54 · K64</div>
     </div>
-    <div class="sw sw-on-light" style="background:var(--champagne);border:1px solid rgba(0,0,0,.06)">
+    <div class="sw sw-champagne">
       <span class="sw-badge">Secondary</span>
       <div class="sw-name">Champagne</div>
       <div class="sw-hex">#E8D5B0</div>
@@ -335,52 +291,53 @@
     </div>
   </div>
 
-  <!-- Juniper -->
-  <h3 style="margin-top:24px;margin-bottom:0">GINesis Palette</h3>
-  <div class="swatch-grid cols-1">
-    <div class="sw sw-on-dark" style="background:var(--juniper)">
+  <div class="swatch-title">GINesis Palette</div>
+  <div class="swatch-grid cols-2">
+    <div class="sw sw-juniper">
       <span class="sw-badge">GINesis only</span>
       <div class="sw-name">Juniper</div>
       <div class="sw-hex">#6B8C72</div>
-      <div class="sw-use">Product sections · Availability states · GINesis brand identity</div>
-      <div class="sw-cmyk">C23 · M0 · Y19 · K45 · Pantone 5555 C</div>
+      <div class="sw-use">Product sections · Availability states</div>
+      <div class="sw-cmyk">C23 · M0 · Y19 · K45</div>
+    </div>
+    <div class="sw" style="background:var(--dark-juniper);color:var(--ivory)">
+      <span class="sw-badge">GINesis only</span>
+      <div class="sw-name">Dark Juniper</div>
+      <div class="sw-hex">#0D1D10</div>
+      <div class="sw-use">Deep GINesis surfaces</div>
+      <div class="sw-cmyk">C34 · M0 · Y24 · K89</div>
     </div>
   </div>
 
-  <!-- Colour token table -->
+  <!-- Token table -->
   <div class="sp-8"></div>
   <table>
     <thead><tr><th>Token</th><th>Value</th><th>Use for</th><th>Never for</th></tr></thead>
     <tbody>
       <tr>
         <td><code>--obsidian</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:var(--obsidian);border-color:#333"></span>#0D0C08</span></td>
-        <td>Page background, packaging</td>
-        <td>Text on dark background</td>
+        <td><span class="td-chip"><span class="td-dot" style="background:#0D0C08;border-color:#333"></span>#0D0C08</span></td>
+        <td>Page background</td><td>Text on dark</td>
       </tr>
       <tr>
         <td><code>--gold</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:var(--gold)"></span>#C8A97E</span></td>
-        <td>Logo, headlines, CTAs, borders</td>
-        <td>Body text on light BG</td>
+        <td><span class="td-chip"><span class="td-dot" style="background:#C8A97E"></span>#C8A97E</span></td>
+        <td>Logo, headings, CTAs</td><td>Body text on light bg</td>
       </tr>
       <tr>
         <td><code>--ivory</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:var(--ivory);border-color:#bbb"></span>#FDF6EA</span></td>
-        <td>Headings and body text on dark BG</td>
-        <td>Primary accent</td>
+        <td><span class="td-chip"><span class="td-dot" style="background:#FDF6EA;border-color:#bbb"></span>#FDF6EA</span></td>
+        <td>Headings &amp; body on dark</td><td>Accent colour</td>
       </tr>
       <tr>
         <td><code>--midnight</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:var(--midnight);border-color:#333"></span>#121212</span></td>
-        <td>Cards, sidebar, table rows</td>
-        <td>Primary page background</td>
+        <td><span class="td-chip"><span class="td-dot" style="background:#121212;border-color:#333"></span>#121212</span></td>
+        <td>Cards, sidebar, panels</td><td>Primary page background</td>
       </tr>
       <tr>
         <td><code>--juniper</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:var(--juniper)"></span>#6B8C72</span></td>
-        <td>GINesis product context only</td>
-        <td>Any other product context</td>
+        <td><span class="td-chip"><span class="td-dot" style="background:#6B8C72"></span>#6B8C72</span></td>
+        <td>GINesis context only</td><td>Any other product</td>
       </tr>
     </tbody>
   </table>
@@ -388,28 +345,22 @@
   <!-- Live mockup -->
   <div class="sp-8"></div>
   <div class="demo">
-    <div class="demo-label">All Brand Colours in Use</div>
+    <div class="demo-label">All Brand Colours in Context</div>
     <div class="mockup">
       <div class="mock-nav">
         <div class="mock-logo">Veridoshé</div>
-        <div class="mock-links">
-          <span>Collection</span><span>Atelier</span><span>About</span>
-        </div>
+        <div class="mock-links"><span>Collection</span><span>Atelier</span><span>About</span></div>
       </div>
       <div class="mock-hero">
         <div class="mock-eyebrow">VERIDOSHÉ — 2026</div>
-        <div class="mock-h1">The Sound<br><em>of Clarity &amp; Truth</em></div>
-        <div class="mock-p">Every detail is designed with intention. Authentic ingredients, timeless character, and a spirit rooted in clarity.</div>
+        <div class="mock-h1">The Sound of<br><em>Clarity &amp; Truth</em></div>
+        <div class="mock-p">Every detail is designed with intention. Authentic ingredients, timeless character, rooted in clarity.</div>
         <div class="mock-btns">
           <button class="btn-base btn-grain" type="button">
-            <span class="btn-grain-shine"></span>
-            <span>Discover</span>
+            <span class="btn-grain-shine"></span><span>Discover</span>
           </button>
           <button class="btn-base btn-split" type="button">
-            <span class="split-inner">
-              <span class="split-top">Buy Now</span>
-              <span class="split-bot">Buy Now</span>
-            </span>
+            <span class="split-inner"><span class="split-top">Buy Now</span><span class="split-bot">Buy Now</span></span>
           </button>
         </div>
       </div>
@@ -417,21 +368,21 @@
         <div class="mock-card">
           <div class="mc-tag">Philosophy</div>
           <div class="mc-title">Truth</div>
-          <div class="mc-text">The foundation of Veridoshé — clarity, authenticity, and purpose.</div>
+          <div class="mc-text">Clarity, authenticity, and purpose.</div>
           <div class="mc-line"></div>
           <div class="mc-price">Core Value</div>
         </div>
         <div class="mock-card">
           <div class="mc-tag">Experience</div>
           <div class="mc-title">Presence</div>
-          <div class="mc-text">A refined moment shaped by balance, character, and intention.</div>
+          <div class="mc-text">Balance, character, and intention.</div>
           <div class="mc-line"></div>
           <div class="mc-price">Signature</div>
         </div>
-        <div class="mock-card mock-card-ginesis">
-          <div class="mc-tag mc-tag-gin">Identity</div>
-          <div class="mc-title">Ginesis</div>
-          <div class="mc-text mc-text-gin">Bright. Botanical. Intentional. Built to move seamlessly from daylight to high-energy nights.</div>
+        <div class="mock-card mock-card-gin">
+          <div class="mc-tag mc-tag-gin">GINesis</div>
+          <div class="mc-title mc-title-gin">Botanical</div>
+          <div class="mc-text mc-text-gin">Bright. Intentional. Built for every occasion.</div>
           <div class="mc-line mc-line-gin"></div>
           <div class="mc-price mc-price-gin">The Signature Edition</div>
         </div>
@@ -440,16 +391,14 @@
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     06 · TYPOGRAPHY
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     06 TYPOGRAPHY
+══════════════════════════════════ -->
 <div id="type" class="tab">
   <div class="ey">06 · Visual System</div>
   <h2>Typography <em>System</em></h2>
-
   <div class="note">
-    <strong>2 typefaces only.</strong> Montserrat (sans) for structure, Cormorant Garamond (serif) for editorial moments. Both free on Google Fonts.
+    <strong>2 typefaces only.</strong> Montserrat (sans) for structure and UI. Cormorant Garamond (serif) for editorial accents and quotes. Both free on Google Fonts.
   </div>
 
   <div class="tgrid">
@@ -457,12 +406,12 @@
     <div class="trow">
       <aside class="tmeta">
         <div class="trole">Display · H1</div>
-        <div class="tspec">Montserrat
-700
-clamp(48–88px)
-tracking .06em
-uppercase
-color — ivory</div>
+        <div class="tspec"><span class="tspec-key">Montserrat</span>
+Weight:    700
+Size:      clamp(48–88px)
+Tracking:  .06em
+Case:      Uppercase
+Color:     Ivory</div>
       </aside>
       <div class="tprev">
         <div class="t-display">ZERO-PROOF.<br>ALL THE FLAVOR.</div>
@@ -472,12 +421,12 @@ color — ivory</div>
     <div class="trow">
       <aside class="tmeta">
         <div class="trole">Heading · H2</div>
-        <div class="tspec">Montserrat
-600
-36–52px
-tracking .05em
-uppercase
-color — gold or ivory</div>
+        <div class="tspec"><span class="tspec-key">Montserrat</span>
+Weight:    600
+Size:      36–52px
+Tracking:  .05em
+Case:      Uppercase
+Color:     Gold or Ivory</div>
       </aside>
       <div class="tprev">
         <div class="t-h2">Signature Zero-Proof Cocktails</div>
@@ -487,12 +436,12 @@ color — gold or ivory</div>
     <div class="trow">
       <aside class="tmeta">
         <div class="trole">Tagline</div>
-        <div class="tspec">Montserrat
-600
-11–14px
-tracking .38em
-word-spacing .4em
-color — gold</div>
+        <div class="tspec"><span class="tspec-key">Montserrat</span>
+Weight:    600
+Size:      11–14px
+Tracking:  .38em
+Spacing:   word .4em
+Color:     Gold</div>
       </aside>
       <div class="tprev">
         <div class="t-tagline">Truth Tastes Better.</div>
@@ -502,14 +451,14 @@ color — gold</div>
     <div class="trow">
       <aside class="tmeta">
         <div class="trole">Editorial · Serif</div>
-        <div class="tspec">Cormorant Garamond
-300 italic
-24–40px
-tracking normal
-color — gold or ivory
-Quotes · manifesto</div>
+        <div class="tspec"><span class="tspec-key">Cormorant Garamond</span>
+Weight:    300 italic
+Size:      24–40px
+Tracking:  default
+Color:     Gold or Ivory
+Usage:     Quotes, accents</div>
       </aside>
-      <div class="tprev" style="flex-direction:column;gap:12px">
+      <div class="tprev" style="flex-direction:column;gap:12px;align-items:flex-start">
         <div class="t-serif">of existence.</div>
         <div class="t-mix">...or you <em>embody</em> the CONQUEST.</div>
       </div>
@@ -518,12 +467,12 @@ Quotes · manifesto</div>
     <div class="trow">
       <aside class="tmeta">
         <div class="trole">Body Text</div>
-        <div class="tspec">Montserrat
-300
-14–16px
-line-height 1.75
-tracking .02em
-color — ivory</div>
+        <div class="tspec"><span class="tspec-key">Montserrat</span>
+Weight:    300
+Size:      14–16px
+Line-h:    1.75
+Tracking:  .02em
+Color:     Ivory</div>
       </aside>
       <div class="tprev">
         <div class="t-body">Veridoshé delivers the full cocktail experience without compromise — no alcohol, no sugar, no apology. A spirit for the fully awake.</div>
@@ -533,337 +482,272 @@ color — ivory</div>
     <div class="trow">
       <aside class="tmeta">
         <div class="trole">Label · UI · Tag</div>
-        <div class="tspec">Montserrat
-600–700
-8–11px
-tracking .20–.35em
-uppercase
-color — gold</div>
+        <div class="tspec"><span class="tspec-key">Montserrat</span>
+Weight:    600–700
+Size:      8–11px
+Tracking:  .20–.35em
+Case:      Uppercase
+Color:     Gold</div>
       </aside>
-      <div class="tprev" style="flex-direction:column;gap:14px">
-        <div class="t-label">Zero Sugar &middot; Zero Carbs &middot; Zero Calories</div>
-        <div class="t-label" style="color:var(--bronze);letter-spacing:.2em">Nouvelle Collection — 2026</div>
-        <div class="t-label" style="color:var(--champagne);letter-spacing:.16em;font-weight:500">Botanical · Intentional</div>
+      <div class="tprev" style="flex-direction:column;gap:14px;align-items:flex-start">
+        <div class="t-label">Zero Sugar · Zero Carbs · Zero Calories</div>
+        <div class="t-label" style="color:var(--champagne);letter-spacing:.18em">Nouvelle Collection — 2026</div>
       </div>
     </div>
 
   </div>
 
-  <!-- Tracking system visual -->
-  <div class="demo" style="margin-top:28px">
-    <div class="demo-label">Letter-Spacing Scale</div>
-    <div style="display:flex;flex-direction:column;gap:18px;padding:4px 0">
-      <div>
-        <div style="font-size:8px;color:var(--bronze);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px">--ls-hero · 0.12em · Logo wordmark</div>
-        <div style="font-family:var(--font-serif);font-size:22px;letter-spacing:.12em;color:var(--ivory)">VERIDOSHÉ</div>
-      </div>
-      <div>
-        <div style="font-size:8px;color:var(--bronze);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px">--ls-eyebrow · 0.35em · Navigation, labels</div>
-        <div style="font-size:11px;font-weight:600;letter-spacing:.35em;text-transform:uppercase;color:var(--gold)">TRUTH TASTES BETTER.</div>
-      </div>
-      <div>
-        <div style="font-size:8px;color:var(--bronze);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px">--ls-nav · 0.20em · Navigation links</div>
-        <div style="font-size:11px;font-weight:500;letter-spacing:.20em;text-transform:uppercase;color:var(--champagne)">Collection &middot; Atelier &middot; About</div>
-      </div>
-      <div>
-        <div style="font-size:8px;color:var(--bronze);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px">--ls-body · 0.02em · Body text</div>
-        <div style="font-size:14px;font-weight:300;letter-spacing:.02em;color:var(--ivory)">A spirit for the fully awake. Zero proof, all the flavor.</div>
-      </div>
+  <!-- Tracking scale -->
+  <div class="sp-8"></div>
+  <h3>Letter-Spacing Scale</h3>
+  <div class="ls-scale">
+    <div class="ls-row">
+      <div class="ls-meta"><div class="ls-token">--ls-logo</div><div class="ls-val">0.30em</div></div>
+      <div class="ls-prev" style="letter-spacing:.30em;font-family:var(--serif);font-weight:300">VERIDOSHÉ</div>
+    </div>
+    <div class="ls-row">
+      <div class="ls-meta"><div class="ls-token">--ls-eyebrow</div><div class="ls-val">0.28em</div></div>
+      <div class="ls-prev" style="letter-spacing:.28em;font-size:9px">TRUTH TASTES BETTER.</div>
+    </div>
+    <div class="ls-row">
+      <div class="ls-meta"><div class="ls-token">--ls-nav</div><div class="ls-val">0.16em</div></div>
+      <div class="ls-prev" style="letter-spacing:.16em;font-size:10px">Collection · Atelier · About</div>
+    </div>
+    <div class="ls-row">
+      <div class="ls-meta"><div class="ls-token">--ls-h1</div><div class="ls-val">0.06em</div></div>
+      <div class="ls-prev" style="letter-spacing:.06em;font-size:22px;font-weight:700">ZERO-PROOF</div>
+    </div>
+    <div class="ls-row">
+      <div class="ls-meta"><div class="ls-token">--ls-body</div><div class="ls-val">0.02em</div></div>
+      <div class="ls-prev" style="letter-spacing:.02em;font-size:14px;font-weight:300;text-transform:none">A spirit for the fully awake.</div>
     </div>
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     07 · SPACING
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     07 SPACING
+══════════════════════════════════ -->
 <div id="spacing" class="tab">
   <div class="ey">07 · Visual System</div>
   <h2>Spacing <em>System</em></h2>
-  <p>Base unit: 4px. All spacing is a multiple of this unit.</p>
+  <p>Base unit: 4px. All spacing is a multiple. Use tokens — never hardcode values.</p>
 
-  <!-- Visual scale -->
   <div class="spacing-visual">
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:8px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-1</span><span class="sp-val">4px · 0.25rem</span>
-        <div class="sp-use">Icon gaps, micro-spacing</div>
-      </div>
+      <div class="sp-num">4px</div>
+      <div class="sp-info"><span class="sp-token">--sp-1</span><span class="sp-val">· 0.25rem</span><div class="sp-use">Icon gaps, micro-spacing</div></div>
     </div>
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:16px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-2</span><span class="sp-val">8px · 0.5rem</span>
-        <div class="sp-use">Label–value spacing, tight stacks</div>
-      </div>
+      <div class="sp-num">8px</div>
+      <div class="sp-info"><span class="sp-token">--sp-2</span><span class="sp-val">· 0.5rem</span><div class="sp-use">Label–value spacing, tight stacks</div></div>
     </div>
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:32px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-4</span><span class="sp-val">16px · 1rem</span>
-        <div class="sp-use">Base unit — card padding, form gaps</div>
-      </div>
+      <div class="sp-num">16px</div>
+      <div class="sp-info"><span class="sp-token">--sp-4</span><span class="sp-val">· 1rem</span><div class="sp-use">Base unit — form gaps, card padding</div></div>
     </div>
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:48px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-6</span><span class="sp-val">24px · 1.5rem</span>
-        <div class="sp-use">Grid gaps, medium padding</div>
-      </div>
+      <div class="sp-num">24px</div>
+      <div class="sp-info"><span class="sp-token">--sp-6</span><span class="sp-val">· 1.5rem</span><div class="sp-use">Grid gaps, medium padding</div></div>
     </div>
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:64px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-8</span><span class="sp-val">32px · 2rem</span>
-        <div class="sp-use">Spacing between components</div>
-      </div>
+      <div class="sp-num">32px</div>
+      <div class="sp-info"><span class="sp-token">--sp-8</span><span class="sp-val">· 2rem</span><div class="sp-use">Between components</div></div>
     </div>
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:96px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-12</span><span class="sp-val">48px · 3rem</span>
-        <div class="sp-use">Section padding (mobile)</div>
-      </div>
+      <div class="sp-num">48px</div>
+      <div class="sp-info"><span class="sp-token">--sp-12</span><span class="sp-val">· 3rem</span><div class="sp-use">Section padding (mobile)</div></div>
     </div>
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:130px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-16</span><span class="sp-val">64px · 4rem</span>
-        <div class="sp-use">Section padding (desktop)</div>
-      </div>
+      <div class="sp-num">64px</div>
+      <div class="sp-info"><span class="sp-token">--sp-16</span><span class="sp-val">· 4rem</span><div class="sp-use">Section padding (desktop)</div></div>
     </div>
     <div class="sp-row">
       <div class="sp-bar-wrap"><div class="sp-bar" style="width:160px"></div></div>
-      <div class="sp-info">
-        <span class="sp-token">--sp-20</span><span class="sp-val">80px · 5rem</span>
-        <div class="sp-use">Hero / large section padding</div>
-      </div>
+      <div class="sp-num">80px</div>
+      <div class="sp-info"><span class="sp-token">--sp-20</span><span class="sp-val">· 5rem</span><div class="sp-use">Hero / large section padding</div></div>
     </div>
   </div>
 
   <hr>
-
   <h3>Border Radius</h3>
   <div class="demo">
-    <div class="demo-label">Radius Scale</div>
-    <div style="display:flex;gap:24px;align-items:flex-end;flex-wrap:wrap">
+    <div class="demo-label">Radius Tokens</div>
+    <div class="demo-body" style="display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap">
       <div style="text-align:center">
-        <div style="width:40px;height:40px;background:var(--deep-umber);border:1px solid var(--border);border-radius:2px;margin:0 auto 8px"></div>
-        <div style="font-size:9px;color:var(--bronze);letter-spacing:.15em">--r-xs · 2px<br>Tags, code</div>
+        <div style="width:44px;height:44px;background:var(--deep-umber);border:1px solid var(--border);border-radius:2px;margin:0 auto 10px"></div>
+        <code>--r-xs</code>
+        <div style="font-size:11px;color:var(--champagne);margin-top:5px">2px · Tags, code</div>
       </div>
       <div style="text-align:center">
-        <div style="width:60px;height:60px;background:var(--deep-umber);border:1px solid var(--border);border-radius:4px;margin:0 auto 8px"></div>
-        <div style="font-size:9px;color:var(--bronze);letter-spacing:.15em">--r-sm · 4px<br>Buttons, inputs</div>
+        <div style="width:60px;height:60px;background:var(--deep-umber);border:1px solid var(--border);border-radius:3px;margin:0 auto 10px"></div>
+        <code>--r-sm</code>
+        <div style="font-size:11px;color:var(--champagne);margin-top:5px">3px · Buttons, inputs</div>
       </div>
       <div style="text-align:center">
-        <div style="width:80px;height:80px;background:var(--deep-umber);border:1px solid var(--border);border-radius:8px;margin:0 auto 8px"></div>
-        <div style="font-size:9px;color:var(--bronze);letter-spacing:.15em">--r-md · 8px<br>Cards, modals</div>
+        <div style="width:78px;height:78px;background:var(--deep-umber);border:1px solid var(--border);border-radius:6px;margin:0 auto 10px"></div>
+        <code>--r-md</code>
+        <div style="font-size:11px;color:var(--champagne);margin-top:5px">6px · Cards, modals</div>
       </div>
     </div>
   </div>
 
   <hr>
-
   <h3>Borders</h3>
   <table>
     <thead><tr><th>Token</th><th>Value</th><th>Use</th></tr></thead>
     <tbody>
-      <tr>
-        <td><code>--border</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:rgba(200,169,126,.15);border:1px solid var(--border)"></span>gold · 15%</span></td>
-        <td>Default borders, dividers</td>
-      </tr>
-      <tr>
-        <td><code>--border-hi</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:rgba(200,169,126,.40);border:1px solid var(--border)"></span>gold · 40%</span></td>
-        <td>Focus / active states, hover</td>
-      </tr>
-      <tr>
-        <td><code>--border-subtle</code></td>
-        <td><span class="td-chip"><span class="td-dot" style="background:rgba(200,169,126,.07);border:1px solid var(--border)"></span>gold · 7%</span></td>
-        <td>Subtle separators inside dark surfaces</td>
-      </tr>
+      <tr><td><code>--border</code></td><td><span class="td-chip"><span class="td-dot" style="background:rgba(200,169,126,.18)"></span>gold · 18%</span></td><td>Default borders, dividers, table separators</td></tr>
+      <tr><td><code>--border-hi</code></td><td><span class="td-chip"><span class="td-dot" style="background:rgba(200,169,126,.45)"></span>gold · 45%</span></td><td>Focus / active states, hover highlights</td></tr>
+      <tr><td><code>--border-lo</code></td><td><span class="td-chip"><span class="td-dot" style="background:rgba(200,169,126,.08)"></span>gold · 8%</span></td><td>Subtle separators inside dark surfaces</td></tr>
     </tbody>
   </table>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     08 · VISUAL TEXTURE
-══════════════════════════════════════════════════════ -->
-<div id="imagery" class="tab">
+<!-- ══════════════════════════════════
+     08 VISUAL TEXTURE
+══════════════════════════════════ -->
+<div id="texture" class="tab">
   <div class="ey">08 · Visual System</div>
   <h2>Visual <em>Texture</em></h2>
-  <p>Imagery should feel premium, editorial, and tactile. The goal: luxury-bar atmosphere, minimal composition, and controlled highlights.</p>
+  <p>No decorative gradients. Textures must be subtle, tactile, and purposeful.</p>
 
   <div class="dd">
     <div class="ddb do">
       <div class="ddt">✓ Approved Textures</div>
       <ul class="ddl">
-        <li>Brushed metal surfaces</li>
-        <li>Matte stone / slate</li>
-        <li>Dark glass reflections</li>
-        <li>Subtle grain overlay (very light)</li>
-        <li>Soft gradients on dark backgrounds</li>
+        <li>Brushed metal and matte surfaces</li>
+        <li>Polished dark stone / slate</li>
+        <li>Controlled dark glass reflections</li>
+        <li>Very subtle noise grain (max 5% opacity)</li>
+        <li>Solid dark backgrounds with one light source</li>
       </ul>
     </div>
     <div class="ddb dont">
       <div class="ddt">✕ Avoid</div>
       <ul class="ddl">
+        <li>Decorative colour gradients in UI</li>
         <li>Busy patterns or loud backgrounds</li>
-        <li>Bright colourful textures</li>
-        <li>Plastic or cheap surfaces</li>
-        <li>"Neon bar" visual clichés</li>
-        <li>Heavy noise or overdone overlays</li>
+        <li>Plastic or reflective cheap surfaces</li>
+        <li>Neon bar aesthetic clichés</li>
+        <li>Heavy noise or over-processed overlays</li>
       </ul>
     </div>
   </div>
 
-  <!-- Texture preview -->
   <div class="demo">
-    <div class="demo-label">Texture Examples</div>
+    <div class="demo-label">Approved Surface Treatments</div>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px">
-      <div style="height:120px;background:linear-gradient(135deg,#1a1810 0%,#2C2416 50%,#1a1810 100%);display:flex;align-items:flex-end;padding:10px">
-        <span style="font-size:8px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase">Dark gradient</span>
+      <div style="height:130px;background:var(--deep-umber);display:flex;align-items:flex-end;padding:12px">
+        <span style="font-size:9px;color:var(--champagne);letter-spacing:.12em;text-transform:uppercase">Deep Umber surface</span>
       </div>
-      <div style="height:120px;background:linear-gradient(135deg,rgba(200,169,126,.1) 0%,transparent 50%),var(--midnight);background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNuKSIgb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg=='),var(--midnight);display:flex;align-items:flex-end;padding:10px">
-        <span style="font-size:8px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase">Subtle grain</span>
+      <div style="height:130px;background:var(--midnight);border:1px solid var(--border);display:flex;align-items:flex-end;padding:12px">
+        <span style="font-size:9px;color:var(--champagne);letter-spacing:.12em;text-transform:uppercase">Midnight surface</span>
       </div>
-      <div style="height:120px;background:linear-gradient(160deg,rgba(92,74,42,.4) 0%,var(--midnight) 60%);border:1px solid var(--border);display:flex;align-items:flex-end;padding:10px">
-        <span style="font-size:8px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase">Warm reflection</span>
+      <div style="height:130px;background:var(--obsidian);border:1px solid var(--border);display:flex;align-items:flex-end;padding:12px">
+        <span style="font-size:9px;color:var(--champagne);letter-spacing:.12em;text-transform:uppercase">Obsidian surface</span>
       </div>
-      <div style="height:120px;background:linear-gradient(135deg,rgba(107,140,114,.15) 0%,var(--deep-umber) 100%);display:flex;align-items:flex-end;padding:10px">
-        <span style="font-size:8px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase">Juniper mood</span>
+      <div style="height:130px;background:var(--juniper);display:flex;align-items:flex-end;padding:12px">
+        <span style="font-size:9px;color:var(--ivory);letter-spacing:.12em;text-transform:uppercase">Juniper — GINesis</span>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     09 · PHOTOGRAPHY
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     09 PHOTOGRAPHY
+══════════════════════════════════ -->
 <div id="photo" class="tab">
   <div class="ey">09 · Visual System</div>
   <h2>Photography <em>Guidelines</em></h2>
   <p>Every image must reinforce the brand: premium, editorial, tactile. No stock photography clichés.</p>
 
-  <!-- Shot types -->
   <div class="demo">
     <div class="demo-label">Shot Types</div>
     <div class="photo-grid">
-
       <div class="photo-card">
-        <div class="photo-placeholder" style="--gradient:linear-gradient(160deg,#1a2018 0%,#0d1d10 100%)">
+        <div class="photo-placeholder">
           <div class="photo-icon">🍾</div>
           <div class="photo-label">Hero — Product on Dark</div>
         </div>
         <div class="photo-caption">
           <div class="photo-caption-title">Hero Shot</div>
-          <div class="photo-caption-text">Bottle centered, dark BG, single directional key light from 30–45°. Controlled gold reflections on glass.</div>
+          <div class="photo-caption-text">Bottle centred, dark void background, single directional key light from 30–45°.</div>
         </div>
       </div>
-
       <div class="photo-card">
-        <div class="photo-placeholder" style="--gradient:linear-gradient(160deg,#2C2416 0%,#121212 100%)">
+        <div class="photo-placeholder" style="background:var(--midnight)">
           <div class="photo-icon">🍹</div>
           <div class="photo-label">Lifestyle — Cocktail Ritual</div>
         </div>
         <div class="photo-caption">
           <div class="photo-caption-title">Lifestyle Shot</div>
-          <div class="photo-caption-text">Cocktail glass + garnish, premium bar setting. Minimal props. Negative space for copy overlay.</div>
+          <div class="photo-caption-text">Cocktail glass + garnish in a premium bar setting. Minimal props. Space for copy.</div>
         </div>
       </div>
-
       <div class="photo-card">
-        <div class="photo-placeholder" style="--gradient:linear-gradient(160deg,#1e2820 0%,#2C2416 100%)">
+        <div class="photo-placeholder" style="background:var(--obsidian);border:1px solid var(--border)">
           <div class="photo-icon">🌿</div>
           <div class="photo-label">Detail — Botanical Macro</div>
         </div>
         <div class="photo-caption">
           <div class="photo-caption-title">Detail Shot</div>
-          <div class="photo-caption-text">Close botanicals — juniper, herbs, citrus. Shallow depth of field. Matte surfaces only.</div>
+          <div class="photo-caption-text">Close botanicals — juniper, herbs, citrus. Shallow DOF. Matte surfaces only.</div>
         </div>
       </div>
-
       <div class="photo-card">
-        <div class="photo-placeholder" style="--gradient:linear-gradient(160deg,#0d0c08 0%,#2C2416 80%,#6B8C72 100%)">
+        <div class="photo-placeholder" style="background:var(--dark-juniper)">
           <div class="photo-icon">✨</div>
           <div class="photo-label">Editorial — Mood &amp; Story</div>
         </div>
         <div class="photo-caption">
           <div class="photo-caption-title">Editorial Shot</div>
-          <div class="photo-caption-text">Atmospheric. Person in luxury setting. Emotion over product. Gold as accent only.</div>
+          <div class="photo-caption-text">Atmospheric, person in luxury setting. Emotion over product. Gold as accent only.</div>
         </div>
       </div>
-
     </div>
   </div>
 
-  <!-- Lighting diagram -->
   <div class="demo">
     <div class="demo-label">Lighting Setup</div>
     <div class="lighting-demo">
       <div style="position:relative">
-        <div class="bottle-silhouette">
-          <div class="bottle-neck"></div>
-        </div>
+        <div class="bottle"><div class="bottle-neck"></div></div>
       </div>
-      <div class="lighting-labels">
-        <div class="light-point">
-          <div class="lp-dot" style="background:var(--gold)"></div>
-          <div class="lp-text"><strong>Key light</strong>30–45° from left. Soft directional. Creates bottle contour.</div>
-        </div>
-        <div class="light-point">
-          <div class="lp-dot" style="background:var(--champagne)"></div>
-          <div class="lp-text"><strong>Fill light</strong>Very subtle. Preserves label detail in shadows.</div>
-        </div>
-        <div class="light-point">
-          <div class="lp-dot" style="background:var(--bronze)"></div>
-          <div class="lp-text"><strong>Backlight</strong>Optional rim. Creates separation from background.</div>
-        </div>
-        <div class="light-point">
-          <div class="lp-dot" style="background:var(--midnight);border:1px solid var(--border)"></div>
-          <div class="lp-text"><strong>Background</strong>Dark gradient or void. No flat white.</div>
-        </div>
+      <div class="light-labels">
+        <div class="lp"><div class="lp-dot" style="background:var(--gold)"></div><div class="lp-text"><strong>Key light</strong>30–45° from left. Soft directional. Creates bottle contour and gold reflections.</div></div>
+        <div class="lp"><div class="lp-dot" style="background:var(--champagne)"></div><div class="lp-text"><strong>Fill light</strong>Very subtle, preserves label detail in shadows.</div></div>
+        <div class="lp"><div class="lp-dot" style="background:var(--bronze)"></div><div class="lp-text"><strong>Backlight</strong>Optional rim. Creates separation from background.</div></div>
+        <div class="lp"><div class="lp-dot" style="background:var(--midnight);border:1px solid var(--border)"></div><div class="lp-text"><strong>Background</strong>Dark void only. Never flat white.</div></div>
       </div>
     </div>
   </div>
 
-  <!-- Photo specs -->
   <div class="demo">
     <div class="demo-label">Technical Specifications</div>
     <div class="photo-specs">
-      <div class="photo-spec">
-        <div class="ps-title">Minimum resolution</div>
-        <div class="ps-value">3000 × 3000px</div>
-        <div class="ps-sub">300 DPI for print · 72 DPI web</div>
-      </div>
-      <div class="photo-spec">
-        <div class="ps-title">Colour profile</div>
-        <div class="ps-value">sRGB for digital</div>
-        <div class="ps-sub">CMYK for print · Adobe RGB optional</div>
-      </div>
-      <div class="photo-spec">
-        <div class="ps-title">Format</div>
-        <div class="ps-value">.RAW + .JPG</div>
-        <div class="ps-sub">Export as .webp for web delivery</div>
-      </div>
+      <div class="photo-spec"><div class="ps-title">Minimum resolution</div><div class="ps-value">3000 × 3000 px</div><div class="ps-sub">300 DPI print · 72 DPI web</div></div>
+      <div class="photo-spec"><div class="ps-title">Colour profile</div><div class="ps-value">sRGB for digital</div><div class="ps-sub">CMYK for print · Adobe RGB optional</div></div>
+      <div class="photo-spec"><div class="ps-title">Delivery format</div><div class="ps-value">.RAW + .JPG master</div><div class="ps-sub">Export .webp for web delivery</div></div>
     </div>
   </div>
 
-  <!-- Do/Don't -->
   <div class="sp-8"></div>
   <div class="dd">
     <div class="ddb do">
       <div class="ddt">✓ Photography Do</div>
       <ul class="ddl">
         <li>Dark-first compositions with controlled highlights</li>
-        <li>Minimal props — bottle, glass, one garnish max</li>
+        <li>Minimal props — bottle, glass, one garnish maximum</li>
         <li>Negative space left for typography overlay</li>
         <li>Premium textures: marble, slate, brushed metal</li>
-        <li>Mood over message — emotion first</li>
+        <li>Mood and emotion first — product second</li>
       </ul>
     </div>
     <div class="ddb dont">
@@ -871,198 +755,181 @@ color — gold</div>
       <ul class="ddl">
         <li>Bright studio white backgrounds</li>
         <li>Busy scenes with too many elements</li>
-        <li>Overexposed / blown highlights on glass</li>
+        <li>Overexposed or blown highlights on glass</li>
         <li>Stock photo aesthetics or generic setups</li>
-        <li>Mixing GINesis and GINcognito in one image</li>
+        <li>GINesis and GINcognito in the same image</li>
       </ul>
     </div>
   </div>
 
-  <!-- Social formats -->
   <div class="sp-8"></div>
   <h3>Social Media Formats</h3>
   <table>
     <thead><tr><th>Format</th><th>Platform</th><th>Rule</th></tr></thead>
     <tbody>
-      <tr><td>1:1 · Square</td><td>IG feed</td><td>Minimal copy, strong product presence, dark background.</td></tr>
-      <tr><td>4:5 · Portrait</td><td>IG portrait</td><td>Primary layout for product + headline. Wide margins.</td></tr>
-      <tr><td>9:16 · Vertical</td><td>Stories / Reels</td><td>Respect safe zones. Text overlays minimal and premium.</td></tr>
-      <tr><td>16:9 · Landscape</td><td>Video / YouTube</td><td>Editorial titles only. Avoid clutter and "salesy" banners.</td></tr>
+      <tr><td>1:1 Square</td><td>IG feed</td><td>Minimal copy, strong product presence, dark background.</td></tr>
+      <tr><td>4:5 Portrait</td><td>IG portrait</td><td>Primary layout for product + headline. Wide margins.</td></tr>
+      <tr><td>9:16 Vertical</td><td>Stories / Reels</td><td>Respect safe zones. Text overlays: minimal and premium.</td></tr>
+      <tr><td>16:9 Landscape</td><td>Video / YouTube</td><td>Editorial titles only. No clutter or "salesy" banners.</td></tr>
     </tbody>
   </table>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     10 · COLOR PAIRINGS
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     10 COLOR PAIRINGS
+══════════════════════════════════ -->
 <div id="pairings" class="tab">
   <div class="ey">10 · Components</div>
   <h2>Colour <em>Pairings</em></h2>
-  <p>Approved combinations only. Never introduce new colour pairings without brand sign-off.</p>
+  <p>Approved combinations only. All combinations pass WCAG AA contrast. Never create new pairings without brand sign-off.</p>
 
   <div class="pairings-grid">
 
-    <div>
+    <div class="pair-wrap">
       <div class="pair-card pair-dark">
-        <div class="pair-eyebrow" style="color:var(--bronze)">Primary · Dark</div>
+        <div class="pair-eyebrow">Primary · Dark</div>
         <div class="pair-heading">Zero-Proof.<br>All the Flavor.</div>
         <div class="pair-rule"></div>
         <div class="pair-sub">Signature Cocktails</div>
       </div>
-      <div class="pair-info">
-        <div class="pair-info-title">Obsidian + Gold + Ivory</div>
-        <div class="pair-info-desc">The core dark-theme combination. Used on all primary digital surfaces and marketing.</div>
+      <div class="pair-meta">
+        <div class="pair-meta-title">Obsidian + Gold + Ivory</div>
+        <div class="pair-meta-desc">Core dark-theme. All primary digital and marketing.</div>
       </div>
     </div>
 
-    <div>
+    <div class="pair-wrap">
       <div class="pair-card pair-light">
-        <div class="pair-eyebrow" style="color:rgba(44,36,22,.5)">Light · Print</div>
+        <div class="pair-eyebrow">Light · Print</div>
         <div class="pair-heading">Zero-Proof.<br>All the Flavor.</div>
         <div class="pair-rule"></div>
-        <div class="pair-sub" style="color:var(--dark-gold)">Signature Cocktails</div>
+        <div class="pair-sub">Signature Cocktails</div>
       </div>
-      <div class="pair-info">
-        <div class="pair-info-title">Ivory + Obsidian + Gold</div>
-        <div class="pair-info-desc">Light variant for print, packaging inserts, and high-contrast applications.</div>
+      <div class="pair-meta">
+        <div class="pair-meta-title">Ivory + Obsidian + Gold</div>
+        <div class="pair-meta-desc">Print, packaging inserts, high-contrast applications.</div>
       </div>
     </div>
 
-    <div>
-      <div class="pair-card pair-card-deep">
-        <div class="pair-eyebrow" style="color:rgba(200,169,126,.4)">Warm · Editorial</div>
+    <div class="pair-wrap">
+      <div class="pair-card pair-deep">
+        <div class="pair-eyebrow">Warm · Editorial</div>
         <div class="pair-heading">Truth Tastes<br>Better.</div>
         <div class="pair-rule"></div>
         <div class="pair-sub">Core Value</div>
       </div>
-      <div class="pair-info">
-        <div class="pair-info-title">Deep Umber + Champagne + Gold</div>
-        <div class="pair-info-desc">Editorial warmth. Cards, feature sections, quote callouts.</div>
+      <div class="pair-meta">
+        <div class="pair-meta-title">Deep Umber + Champagne + Gold</div>
+        <div class="pair-meta-desc">Editorial warmth. Cards, feature sections, quote callouts.</div>
       </div>
     </div>
 
-    <div>
+    <div class="pair-wrap">
       <div class="pair-card pair-juniper">
-        <div class="pair-eyebrow" style="color:rgba(13,29,16,.5)">GINesis · Botanical</div>
+        <div class="pair-eyebrow">GINesis · Botanical</div>
         <div class="pair-heading">Bright.<br>Botanical.</div>
         <div class="pair-rule"></div>
         <div class="pair-sub">The Signature Edition</div>
       </div>
-      <div class="pair-info">
-        <div class="pair-info-title">Juniper + Gold + Ivory</div>
-        <div class="pair-info-desc">GINesis product context only. Never use on GINcognito or brand-level communications.</div>
+      <div class="pair-meta">
+        <div class="pair-meta-title">Juniper + Ivory</div>
+        <div class="pair-meta-desc">GINesis context only. Never use on GINcognito communications.</div>
       </div>
     </div>
 
-    <div>
+    <div class="pair-wrap">
       <div class="pair-card pair-midnight">
-        <div class="pair-eyebrow" style="color:var(--bronze)">Secondary · Surface</div>
+        <div class="pair-eyebrow">Secondary · UI</div>
         <div class="pair-heading">Presence.<br>Refined.</div>
         <div class="pair-rule"></div>
         <div class="pair-sub">Components</div>
       </div>
-      <div class="pair-info">
-        <div class="pair-info-title">Midnight + Champagne + Bronze</div>
-        <div class="pair-info-desc">UI component surfaces. Cards, modals, sidebar backgrounds.</div>
+      <div class="pair-meta">
+        <div class="pair-meta-title">Midnight + Champagne</div>
+        <div class="pair-meta-desc">Cards, modals, sidebar. Secondary UI surfaces.</div>
       </div>
     </div>
 
-    <div>
-      <div class="pair-card pair-gold">
-        <div class="pair-eyebrow" style="color:rgba(44,36,22,.5)">Inverse · Bold</div>
+    <div class="pair-wrap">
+      <div class="pair-card pair-goldbg">
+        <div class="pair-eyebrow">Inverse · Bold</div>
         <div class="pair-heading">Gold.<br>Dominant.</div>
         <div class="pair-rule"></div>
-        <div class="pair-sub" style="color:var(--deep-umber)">CTA Moments</div>
+        <div class="pair-sub">CTA Moments</div>
       </div>
-      <div class="pair-info">
-        <div class="pair-info-title">Gold + Obsidian</div>
-        <div class="pair-info-desc">High-impact CTA buttons, foil packaging details, editorial highlight moments.</div>
+      <div class="pair-meta">
+        <div class="pair-meta-title">Gold + Obsidian</div>
+        <div class="pair-meta-desc">High-impact CTAs, foil packaging, editorial highlights.</div>
       </div>
     </div>
 
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     11 · BUTTONS
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     11 BUTTONS
+══════════════════════════════════ -->
 <div id="buttons" class="tab">
   <div class="ey">11 · Components</div>
   <h2>Button <em>System</em></h2>
   <div class="note">
-    <strong>CSS-only interactions.</strong> Motion &amp; hover styles are part of the Veridoshé UI language. Never use plain fill buttons — each has a considered interaction.
+    <strong>CSS-only interactions.</strong> Each button has a distinct motion signature. Never use plain flat fill buttons — every interaction is intentional.
   </div>
 
   <div class="btn-grid">
 
-    <!-- Split reveal -->
     <article class="btn-card">
-      <div class="btn-kicker">01 · In trend</div>
+      <div class="btn-kicker">01 · Primary</div>
       <div class="btn-title">Split Reveal</div>
       <button class="btn-base btn-split" type="button">
-        <span class="split-inner">
-          <span class="split-top">Buy Now</span>
-          <span class="split-bot">Buy Now</span>
-        </span>
+        <span class="split-inner"><span class="split-top">Buy Now</span><span class="split-bot">Buy Now</span></span>
       </button>
-      <p class="btn-desc">Text splits vertically on hover — top slides up, gold duplicate rises from below. Primary CTA for shop and conversion moments.</p>
+      <p class="btn-desc">Text splits vertically on hover — top exits up, gold duplicate rises from below. Primary CTA for shop and conversion.</p>
       <div class="btn-card-num">01</div>
     </article>
 
-    <!-- Grain / foil -->
     <article class="btn-card">
-      <div class="btn-kicker">02 · Luxury feel</div>
+      <div class="btn-kicker">02 · Luxury</div>
       <div class="btn-title">Grain Foil</div>
       <button class="btn-base btn-grain" type="button">
-        <span class="btn-grain-shine"></span>
-        <span>Get Started</span>
+        <span class="btn-grain-shine"></span><span>Get Started</span>
       </button>
-      <p class="btn-desc">Animated grain overlay simulates metallic foil texture. Subtle shine sweeps on hover — tactile, premium. Use for hero CTAs.</p>
+      <p class="btn-desc">Gold background with grain texture and sweeping shine on hover. Simulates metallic foil. Use for hero CTAs.</p>
       <div class="btn-card-num">02</div>
     </article>
 
-    <!-- Editorial -->
     <article class="btn-card">
-      <div class="btn-kicker">03 · Veridoshé fit</div>
-      <div class="btn-title">Editorial Type</div>
+      <div class="btn-kicker">03 · Editorial</div>
+      <div class="btn-title">Type Swap</div>
       <button class="btn-base btn-editorial" type="button">
-        <span class="btn-editorial-normal">Discover More</span>
-        <span class="btn-editorial-italic">Discover More</span>
+        <span class="btn-ed-normal">Discover More</span>
+        <span class="btn-ed-serif">Discover More</span>
       </button>
-      <p class="btn-desc">Montserrat transitions into Cormorant Italic on hover. Gold underline reveals left-to-right. Use for editorial navigation.</p>
+      <p class="btn-desc">Montserrat transitions into Cormorant Italic on hover. Gold underline reveals left-to-right. Editorial navigation.</p>
       <div class="btn-card-num">03</div>
     </article>
 
-    <!-- Primary fill -->
     <article class="btn-card">
       <div class="btn-kicker">04 · Standard</div>
-      <div class="btn-title">Primary Fill</div>
-      <button class="btn-base btn-primary" type="button">
-        <span>Shop Now</span>
-      </button>
-      <p class="btn-desc">Gold fills from left on hover. Solid, clear, dependable. For secondary CTAs where subtlety is less important than clarity.</p>
+      <div class="btn-title">Fill Reveal</div>
+      <button class="btn-base btn-primary" type="button"><span>Shop Now</span></button>
+      <p class="btn-desc">Gold fills from left on hover. Solid, clear, dependable. Secondary CTAs where clarity matters more than subtlety.</p>
       <div class="btn-card-num">04</div>
     </article>
 
-    <!-- Ghost -->
     <article class="btn-card">
       <div class="btn-kicker">05 · Secondary</div>
       <div class="btn-title">Ghost</div>
       <button class="btn-base btn-ghost" type="button">Learn More</button>
-      <p class="btn-desc">Ivory outline, subtle hover. Use alongside a primary CTA for secondary actions — "learn more", "view all", paired decisions.</p>
+      <p class="btn-desc">Ivory outline, subtle hover. Use alongside a primary CTA for secondary actions — "learn more", "view all".</p>
       <div class="btn-card-num">05</div>
     </article>
 
-    <!-- Juniper / GINesis -->
     <article class="btn-card">
       <div class="btn-kicker">06 · GINesis only</div>
       <div class="btn-title">Juniper Liquid</div>
-      <button class="btn-base btn-juniper" type="button">
-        <span>Explore GINesis</span>
-      </button>
-      <p class="btn-desc">Liquid gold wave rises on hover against Juniper background. Exclusively for GINesis product pages and campaigns.</p>
+      <button class="btn-base btn-juniper" type="button"><span>Explore GINesis</span></button>
+      <p class="btn-desc">Liquid gold wave rises on hover against Juniper background. Exclusively for GINesis product pages.</p>
       <div class="btn-card-num">06</div>
     </article>
 
@@ -1071,41 +938,41 @@ color — gold</div>
   <!-- States -->
   <div class="demo" style="margin-top:28px">
     <div class="demo-label">Button States</div>
-    <div class="state-label">Default · Hover (mouse over) · Active · Disabled</div>
-    <div class="states-row">
-      <button class="btn-base btn-primary"><span>Default</span></button>
-      <button class="btn-base btn-primary" style="color:var(--obsidian);background:var(--gold)"><span>Hover</span></button>
-      <button class="btn-base btn-primary active"><span>Active</span></button>
-      <button class="btn-base btn-primary disabled" disabled><span>Disabled</span></button>
-    </div>
-    <div class="state-label" style="margin-top:20px">Size Variants</div>
-    <div class="states-row">
-      <button class="btn-base btn-split" style="padding:9px 22px;font-size:9px">
-        <span class="split-inner"><span class="split-top">Small</span><span class="split-bot">Small</span></span>
-      </button>
-      <button class="btn-base btn-split">
-        <span class="split-inner"><span class="split-top">Default</span><span class="split-bot">Default</span></span>
-      </button>
-      <button class="btn-base btn-split" style="padding:17px 48px;font-size:13px">
-        <span class="split-inner"><span class="split-top">Large</span><span class="split-bot">Large</span></span>
-      </button>
+    <div class="demo-body">
+      <div class="state-label">Primary states — Default / Hover / Active / Disabled</div>
+      <div class="states-row">
+        <button class="btn-base btn-primary" type="button"><span>Default</span></button>
+        <button class="btn-base btn-primary" style="color:var(--obsidian);background:var(--gold)" type="button"><span>Hover</span></button>
+        <button class="btn-base btn-primary active" type="button"><span>Active</span></button>
+        <button class="btn-base btn-primary disabled" disabled type="button"><span>Disabled</span></button>
+      </div>
+      <div class="state-label">Sizes — Small / Default / Large</div>
+      <div class="states-row">
+        <button class="btn-base btn-split" style="padding:8px 18px;font-size:9px" type="button">
+          <span class="split-inner"><span class="split-top">Small</span><span class="split-bot">Small</span></span>
+        </button>
+        <button class="btn-base btn-split" type="button">
+          <span class="split-inner"><span class="split-top">Default</span><span class="split-bot">Default</span></span>
+        </button>
+        <button class="btn-base btn-split" style="padding:17px 46px;font-size:13px" type="button">
+          <span class="split-inner"><span class="split-top">Large</span><span class="split-bot">Large</span></span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     12 · FORMS
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     12 FORMS
+══════════════════════════════════ -->
 <div id="forms" class="tab">
   <div class="ey">12 · Components</div>
   <h2>Form <em>System</em></h2>
-  <p>All form inputs follow the same dark language. Gold border on focus, bronze placeholder text.</p>
+  <p>All form inputs follow the same dark language. Gold border on focus. Champagne placeholder text.</p>
 
-  <!-- Input states -->
   <div class="demo">
     <div class="demo-label">Input States</div>
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">
+    <div class="demo-body" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <div class="field">
         <label class="flbl">Default State</label>
         <input class="inp" type="text" placeholder="Placeholder text">
@@ -1127,10 +994,9 @@ color — gold</div>
     </div>
   </div>
 
-  <!-- Partnership form -->
   <div class="form-wrap">
     <div class="form-title">Partnership Inquiry</div>
-    <div class="form-sub">Contact form — recommended UI for Veridoshé</div>
+    <div class="form-sub">Recommended UI for Veridoshé contact and inquiry flows</div>
     <div class="form-grid">
       <div class="field">
         <label class="flbl">First Name <span class="req">*</span></label>
@@ -1170,21 +1036,17 @@ color — gold</div>
       </div>
       <div class="form-actions form-full">
         <button class="btn-base btn-split" type="button">
-          <span class="split-inner">
-            <span class="split-top">Send Inquiry</span>
-            <span class="split-bot">Send Inquiry</span>
-          </span>
+          <span class="split-inner"><span class="split-top">Send Inquiry</span><span class="split-bot">Send Inquiry</span></span>
         </button>
-        <span style="font-size:10px;color:var(--bronze);letter-spacing:.1em">We reply within 48 hours.</span>
+        <span style="font-size:10px;color:var(--champagne);letter-spacing:.08em">We reply within 48 hours.</span>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     13 · MARKETING
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     13 MARKETING
+══════════════════════════════════ -->
 <div id="marketing" class="tab">
   <div class="ey">13 · Marketing</div>
   <h2>Marketing <em>Guidelines</em></h2>
@@ -1194,7 +1056,7 @@ color — gold</div>
       <div class="ddt">✓ Do</div>
       <ul class="ddl">
         <li>Dark-first layouts with gold as dominant accent</li>
-        <li>Minimal type overlays, editorial tone</li>
+        <li>Minimal type overlays, editorial tone of voice</li>
         <li>Product + ritual: glass, garnish, premium setting</li>
         <li>Use approved colour pairings only</li>
         <li>Let negative space breathe</li>
@@ -1203,160 +1065,156 @@ color — gold</div>
     <div class="ddb dont">
       <div class="ddt">✕ Don't</div>
       <ul class="ddl">
-        <li>Bright "candy" palettes or colourful gradients</li>
-        <li>Overloaded text blocks or busy layouts</li>
-        <li>Cheap sticker icons or loud emojis</li>
+        <li>Bright or colourful palettes outside the system</li>
+        <li>Overloaded text blocks or cluttered layouts</li>
+        <li>Cheap sticker icons, emojis, or clip art</li>
         <li>Mix GINesis and GINcognito worlds in one post</li>
-        <li>Use playful or casual tone of voice</li>
+        <li>Playful or casual tone of voice</li>
       </ul>
     </div>
   </div>
 
-  <hr>
-
+  <div class="sp-8"></div>
   <h3>Social Media Formats</h3>
   <table>
     <thead><tr><th>Format</th><th>Platform</th><th>Rule</th></tr></thead>
     <tbody>
       <tr><td>1:1</td><td>IG feed</td><td>Minimal copy, strong product presence, dark background.</td></tr>
-      <tr><td>4:5</td><td>IG portrait</td><td>Primary layout for product + headline. Keep wide margins.</td></tr>
-      <tr><td>9:16</td><td>Stories / Reels</td><td>Respect safe zones. Text overlays minimal and premium.</td></tr>
-      <tr><td>16:9</td><td>Video / YouTube</td><td>Editorial titles only. Avoid clutter and "salesy" banners.</td></tr>
+      <tr><td>4:5</td><td>IG portrait</td><td>Primary format for product + headline. Keep wide margins.</td></tr>
+      <tr><td>9:16</td><td>Stories / Reels</td><td>Respect safe zones. Minimal premium text overlays only.</td></tr>
+      <tr><td>16:9</td><td>Video / YouTube</td><td>Editorial titles only. No clutter or salesy banners.</td></tr>
     </tbody>
   </table>
 
-  <!-- Format preview -->
-  <div class="demo">
+  <div class="demo" style="margin-top:28px">
     <div class="demo-label">Format Proportions</div>
-    <div style="display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap">
+    <div class="demo-body" style="display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap">
       <div style="text-align:center">
-        <div style="width:80px;height:80px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
-          <span style="font-size:8px;color:var(--gold);letter-spacing:.1em">1:1</span>
+        <div style="width:88px;height:88px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:10px;color:var(--gold);letter-spacing:.1em">1:1</span>
         </div>
-        <div style="font-size:8px;color:var(--bronze);margin-top:6px">IG Feed</div>
+        <div style="font-size:10px;color:var(--champagne);margin-top:7px">IG Feed</div>
       </div>
       <div style="text-align:center">
-        <div style="width:72px;height:90px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
-          <span style="font-size:8px;color:var(--gold);letter-spacing:.1em">4:5</span>
+        <div style="width:78px;height:98px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:10px;color:var(--gold);letter-spacing:.1em">4:5</span>
         </div>
-        <div style="font-size:8px;color:var(--bronze);margin-top:6px">Portrait</div>
+        <div style="font-size:10px;color:var(--champagne);margin-top:7px">Portrait</div>
       </div>
       <div style="text-align:center">
-        <div style="width:50px;height:89px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
-          <span style="font-size:8px;color:var(--gold);letter-spacing:.1em">9:16</span>
+        <div style="width:55px;height:98px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:10px;color:var(--gold);letter-spacing:.1em">9:16</span>
         </div>
-        <div style="font-size:8px;color:var(--bronze);margin-top:6px">Stories</div>
+        <div style="font-size:10px;color:var(--champagne);margin-top:7px">Stories</div>
       </div>
       <div style="text-align:center">
-        <div style="width:142px;height:80px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
-          <span style="font-size:8px;color:var(--gold);letter-spacing:.1em">16:9</span>
+        <div style="width:156px;height:88px;background:var(--deep-umber);border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:10px;color:var(--gold);letter-spacing:.1em">16:9</span>
         </div>
-        <div style="font-size:8px;color:var(--bronze);margin-top:6px">Video</div>
+        <div style="font-size:10px;color:var(--champagne);margin-top:7px">Video</div>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     14 · CSS TOKENS — DEVELOPER
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     14 CSS TOKENS
+══════════════════════════════════ -->
 <div id="tokens" class="tab">
   <div class="ey">14 · Developer</div>
   <h2>CSS <em>Tokens</em></h2>
   <div class="note">
-    Copy this block into the top of your CSS file. All values flow from these tokens — never hardcode colours or spacing.
+    <strong>Copy this block into the top of your CSS.</strong> All values flow from these tokens — never hardcode colours or spacing.
   </div>
 
-<pre class="code-block"><span class="tok-comment">/* ── Import ── */</span>
-<span class="tok-root">@import url</span>(<span class="tok-val">'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap'</span>);
+<pre class="code-block"><span class="tk-comment">/* ── Import fonts ── */</span>
+<span class="tk-root">@import url</span>(<span class="tk-val">'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap'</span>);
 
-<span class="tok-root">:root {</span>
+<span class="tk-root">:root {</span>
 
-  <span class="tok-comment">/* ── Core Colors ── */</span>
-  <span class="tok-key">--obsidian</span>:       <span class="tok-val">#0D0C08</span>;
-  <span class="tok-key">--gold</span>:            <span class="tok-val">#C8A97E</span>;
-  <span class="tok-key">--ivory</span>:           <span class="tok-val">#FDF6EA</span>;
-  <span class="tok-key">--midnight</span>:        <span class="tok-val">#121212</span>;
+  <span class="tk-comment">/* ── Core Colors ── */</span>
+  <span class="tk-key">--obsidian</span>:      <span class="tk-val">#0D0C08</span>;
+  <span class="tk-key">--gold</span>:           <span class="tk-val">#C8A97E</span>;
+  <span class="tk-key">--ivory</span>:          <span class="tk-val">#FDF6EA</span>;
+  <span class="tk-key">--midnight</span>:       <span class="tk-val">#121212</span>;
 
-  <span class="tok-comment">/* ── Extended Palette ── */</span>
-  <span class="tok-key">--deep-umber</span>:     <span class="tok-val">#2C2416</span>;
-  <span class="tok-key">--dark-gold</span>:      <span class="tok-val">#B8860B</span>;
-  <span class="tok-key">--bronze</span>:          <span class="tok-val">#5C4A2A</span>;
-  <span class="tok-key">--champagne</span>:      <span class="tok-val">#E8D5B0</span>;
-  <span class="tok-key">--juniper</span>:         <span class="tok-val">#6B8C72</span>;   <span class="tok-section">/* GINesis only */</span>
-  <span class="tok-key">--dark-juniper</span>:   <span class="tok-val">#0D1D10</span>;
+  <span class="tk-comment">/* ── Extended Palette ── */</span>
+  <span class="tk-key">--deep-umber</span>:    <span class="tk-val">#2C2416</span>;
+  <span class="tk-key">--dark-gold</span>:     <span class="tk-val">#B8860B</span>;
+  <span class="tk-key">--bronze</span>:         <span class="tk-val">#5C4A2A</span>;
+  <span class="tk-key">--champagne</span>:     <span class="tk-val">#E8D5B0</span>;
+  <span class="tk-key">--juniper</span>:        <span class="tk-val">#6B8C72</span>;   <span class="tk-note">/* GINesis only */</span>
+  <span class="tk-key">--dark-juniper</span>:  <span class="tk-val">#0D1D10</span>;
 
-  <span class="tok-comment">/* ── Gold Alpha Scale ── */</span>
-  <span class="tok-key">--gold-08</span>:         <span class="tok-val">rgba(200,169,126,.08)</span>;
-  <span class="tok-key">--gold-12</span>:         <span class="tok-val">rgba(200,169,126,.12)</span>;
-  <span class="tok-key">--gold-20</span>:         <span class="tok-val">rgba(200,169,126,.20)</span>;
-  <span class="tok-key">--gold-40</span>:         <span class="tok-val">rgba(200,169,126,.40)</span>;
+  <span class="tk-comment">/* ── Gold Alpha Scale ── */</span>
+  <span class="tk-key">--gold-05</span>:        <span class="tk-val">rgba(200,169,126,.05)</span>;
+  <span class="tk-key">--gold-10</span>:        <span class="tk-val">rgba(200,169,126,.10)</span>;
+  <span class="tk-key">--gold-20</span>:        <span class="tk-val">rgba(200,169,126,.20)</span>;
+  <span class="tk-key">--gold-35</span>:        <span class="tk-val">rgba(200,169,126,.35)</span>;
+  <span class="tk-key">--gold-55</span>:        <span class="tk-val">rgba(200,169,126,.55)</span>;
 
-  <span class="tok-comment">/* ── Borders ── */</span>
-  <span class="tok-key">--border</span>:          <span class="tok-val">rgba(200,169,126,.15)</span>;
-  <span class="tok-key">--border-hi</span>:      <span class="tok-val">rgba(200,169,126,.40)</span>;
-  <span class="tok-key">--border-subtle</span>:  <span class="tok-val">rgba(200,169,126,.07)</span>;
+  <span class="tk-comment">/* ── Borders ── */</span>
+  <span class="tk-key">--border</span>:         <span class="tk-val">rgba(200,169,126,.18)</span>;
+  <span class="tk-key">--border-hi</span>:     <span class="tk-val">rgba(200,169,126,.45)</span>;
+  <span class="tk-key">--border-lo</span>:     <span class="tk-val">rgba(200,169,126,.08)</span>;
 
-  <span class="tok-comment">/* ── Fonts ── */</span>
-  <span class="tok-key">--font-sans</span>:      <span class="tok-val">'Montserrat'</span>, sans-serif;
-  <span class="tok-key">--font-serif</span>:     <span class="tok-val">'Cormorant Garamond'</span>, serif;
-  <span class="tok-key">--font-mono</span>:      <span class="tok-val">'Courier New'</span>, monospace;
+  <span class="tk-comment">/* ── Fonts ── */</span>
+  <span class="tk-key">--sans</span>:   <span class="tk-val">'Montserrat'</span>, sans-serif;
+  <span class="tk-key">--serif</span>:  <span class="tk-val">'Cormorant Garamond'</span>, serif;
+  <span class="tk-key">--mono</span>:   <span class="tk-val">'Courier New'</span>, monospace;
 
-  <span class="tok-comment">/* ── Letter-Spacing ── */</span>
-  <span class="tok-key">--ls-logo</span>:         <span class="tok-val">0.30em</span>;
-  <span class="tok-key">--ls-h1</span>:           <span class="tok-val">0.06em</span>;
-  <span class="tok-key">--ls-eyebrow</span>:      <span class="tok-val">0.35em</span>;
-  <span class="tok-key">--ls-nav</span>:          <span class="tok-val">0.20em</span>;
-  <span class="tok-key">--ls-button</span>:       <span class="tok-val">0.18em</span>;
-  <span class="tok-key">--ls-tag</span>:          <span class="tok-val">0.26em</span>;
-  <span class="tok-key">--ls-body</span>:         <span class="tok-val">0.02em</span>;
+  <span class="tk-comment">/* ── Letter-Spacing ── */</span>
+  <span class="tk-key">--ls-logo</span>:    <span class="tk-val">0.30em</span>;
+  <span class="tk-key">--ls-h1</span>:      <span class="tk-val">0.06em</span>;
+  <span class="tk-key">--ls-eyebrow</span>: <span class="tk-val">0.28em</span>;
+  <span class="tk-key">--ls-nav</span>:     <span class="tk-val">0.16em</span>;
+  <span class="tk-key">--ls-btn</span>:     <span class="tk-val">0.18em</span>;
+  <span class="tk-key">--ls-tag</span>:     <span class="tk-val">0.22em</span>;
+  <span class="tk-key">--ls-body</span>:    <span class="tk-val">0.02em</span>;
 
-  <span class="tok-comment">/* ── Spacing ── */</span>
-  <span class="tok-key">--sp-1</span>:    <span class="tok-val">0.25rem</span>;   <span class="tok-section">/*  4px */</span>
-  <span class="tok-key">--sp-2</span>:    <span class="tok-val">0.5rem</span>;    <span class="tok-section">/*  8px */</span>
-  <span class="tok-key">--sp-4</span>:    <span class="tok-val">1rem</span>;      <span class="tok-section">/* 16px */</span>
-  <span class="tok-key">--sp-6</span>:    <span class="tok-val">1.5rem</span>;    <span class="tok-section">/* 24px */</span>
-  <span class="tok-key">--sp-8</span>:    <span class="tok-val">2rem</span>;      <span class="tok-section">/* 32px */</span>
-  <span class="tok-key">--sp-12</span>:   <span class="tok-val">3rem</span>;      <span class="tok-section">/* 48px */</span>
-  <span class="tok-key">--sp-16</span>:   <span class="tok-val">4rem</span>;      <span class="tok-section">/* 64px */</span>
-  <span class="tok-key">--sp-20</span>:   <span class="tok-val">5rem</span>;      <span class="tok-section">/* 80px */</span>
+  <span class="tk-comment">/* ── Spacing Scale ── */</span>
+  <span class="tk-key">--sp-1</span>:   <span class="tk-val">0.25rem</span>;  <span class="tk-note">/*  4px */</span>
+  <span class="tk-key">--sp-2</span>:   <span class="tk-val">0.5rem</span>;   <span class="tk-note">/*  8px */</span>
+  <span class="tk-key">--sp-4</span>:   <span class="tk-val">1rem</span>;     <span class="tk-note">/* 16px */</span>
+  <span class="tk-key">--sp-6</span>:   <span class="tk-val">1.5rem</span>;   <span class="tk-note">/* 24px */</span>
+  <span class="tk-key">--sp-8</span>:   <span class="tk-val">2rem</span>;     <span class="tk-note">/* 32px */</span>
+  <span class="tk-key">--sp-12</span>:  <span class="tk-val">3rem</span>;     <span class="tk-note">/* 48px */</span>
+  <span class="tk-key">--sp-16</span>:  <span class="tk-val">4rem</span>;     <span class="tk-note">/* 64px */</span>
+  <span class="tk-key">--sp-20</span>:  <span class="tk-val">5rem</span>;     <span class="tk-note">/* 80px */</span>
 
-  <span class="tok-comment">/* ── Border Radius ── */</span>
-  <span class="tok-key">--r-xs</span>:    <span class="tok-val">2px</span>;
-  <span class="tok-key">--r-sm</span>:    <span class="tok-val">4px</span>;
-  <span class="tok-key">--r-md</span>:    <span class="tok-val">8px</span>;
+  <span class="tk-comment">/* ── Border Radius ── */</span>
+  <span class="tk-key">--r-xs</span>:   <span class="tk-val">2px</span>;
+  <span class="tk-key">--r-sm</span>:   <span class="tk-val">3px</span>;
+  <span class="tk-key">--r-md</span>:   <span class="tk-val">6px</span>;
 
-  <span class="tok-comment">/* ── Transitions ── */</span>
-  <span class="tok-key">--ease-luxury</span>:    <span class="tok-val">cubic-bezier(.76,0,.24,1)</span>;
-  <span class="tok-key">--ease-smooth</span>:    <span class="tok-val">cubic-bezier(.33,1,.68,1)</span>;
+  <span class="tk-comment">/* ── Transitions ── */</span>
+  <span class="tk-key">--ease</span>:    <span class="tk-val">cubic-bezier(.76,0,.24,1)</span>;
+  <span class="tk-key">--ease-in</span>: <span class="tk-val">cubic-bezier(.33,1,.68,1)</span>;
 
-<span class="tok-root">}</span></pre>
+<span class="tk-root">}</span></pre>
 
-  <hr>
-
+  <div class="sp-8"></div>
   <h3>Usage Examples</h3>
-<pre class="code-block" style="font-size:11px"><span class="tok-comment">/* Button hover fill */</span>
-<span class="tok-key">.btn</span> { border-color: <span class="tok-val">var(--gold)</span>; color: <span class="tok-val">var(--gold)</span>; }
-<span class="tok-key">.btn:hover</span> { background: <span class="tok-val">var(--gold)</span>; color: <span class="tok-val">var(--obsidian)</span>; }
+<pre class="code-block" style="font-size:11px"><span class="tk-comment">/* Button */</span>
+<span class="tk-key">.btn</span> { border-color: <span class="tk-val">var(--gold)</span>; color: <span class="tk-val">var(--gold)</span>; }
+<span class="tk-key">.btn:hover</span> { background: <span class="tk-val">var(--gold)</span>; color: <span class="tk-val">var(--obsidian)</span>; }
 
-<span class="tok-comment">/* Card surface */</span>
-<span class="tok-key">.card</span> { background: <span class="tok-val">var(--deep-umber)</span>; border: 1px solid <span class="tok-val">var(--border)</span>; }
+<span class="tk-comment">/* Card surface */</span>
+<span class="tk-key">.card</span> { background: <span class="tk-val">var(--deep-umber)</span>; border: 1px solid <span class="tk-val">var(--border)</span>; }
 
-<span class="tok-comment">/* GINesis section */</span>
-<span class="tok-key">.ginesis</span> { background: <span class="tok-val">var(--juniper)</span>; color: <span class="tok-val">var(--ivory)</span>; }
+<span class="tk-comment">/* GINesis section */</span>
+<span class="tk-key">.ginesis</span> { background: <span class="tk-val">var(--juniper)</span>; color: <span class="tk-val">var(--ivory)</span>; }
 
-<span class="tok-comment">/* Focus ring */</span>
-<span class="tok-key">.input:focus</span> { border-color: <span class="tok-val">var(--gold)</span>; outline: none; }
+<span class="tk-comment">/* Focus ring on input */</span>
+<span class="tk-key">.inp:focus</span> { border-color: <span class="tk-val">var(--gold)</span>; outline: none; }
 
-<span class="tok-comment">/* Section padding */</span>
-<span class="tok-key">.section</span> { padding: <span class="tok-val">var(--sp-16)</span> <span class="tok-val">var(--sp-8)</span>; }</pre>
+<span class="tk-comment">/* Section padding */</span>
+<span class="tk-key">.section</span> { padding: <span class="tk-val">var(--sp-16)</span> <span class="tk-val">var(--sp-8)</span>; }</pre>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     15 · RULES
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     15 RULES
+══════════════════════════════════ -->
 <div id="rules" class="tab">
   <div class="ey">15 · Guidelines</div>
   <h2>Do's &amp; <em>Don'ts</em></h2>
@@ -1365,105 +1223,67 @@ color — gold</div>
     <div class="ddb do">
       <div class="ddt">✓ Always</div>
       <ul class="ddl">
-        <li>Always VERIDOSHÉ — never VERIDOSHE (É is mandatory)</li>
-        <li>Tagline period is mandatory: "TRUTH TASTES BETTER."</li>
+        <li>Always VERIDOSHÉ — É accent is mandatory</li>
+        <li>Tagline period: "TRUTH TASTES BETTER." — always present</li>
         <li>Wide tracking (.26em) on tagline in all lockups</li>
         <li>Dark-first for all digital output</li>
         <li>Gold (#C8A97E) as dominant accent on every layout</li>
-        <li>Logo always as .svg — never recreate from type</li>
-        <li>Cormorant Italic for editorial accents and quotes only</li>
-        <li>Juniper only in GINesis product contexts</li>
+        <li>Logo as .svg only — never recreate from type</li>
+        <li>Juniper colour in GINesis context only</li>
       </ul>
     </div>
     <div class="ddb dont">
       <div class="ddt">✕ Never</div>
       <ul class="ddl">
-        <li>Never VERIDOSHE without the É accent</li>
-        <li>Never pure white #FFFFFF — use Ivory #FDF6EA</li>
-        <li>Never pure black #000000 — use Obsidian #0D0C08</li>
-        <li>Never new hue colours — only opacity variants approved</li>
-        <li>Never drop shadows on the logo</li>
-        <li>Never Inter, Roboto, or Arial typefaces</li>
-        <li>Never Juniper outside GINesis context</li>
-        <li>Never mix GINesis and GINcognito in one visual</li>
+        <li>VERIDOSHE without the É accent</li>
+        <li>Pure white #FFFFFF — use Ivory #FDF6EA</li>
+        <li>Pure black #000000 — use Obsidian #0D0C08</li>
+        <li>New hue colours outside the defined 9</li>
+        <li>Drop shadows, outlines, or effects on the logo</li>
+        <li>Inter, Roboto, Arial, or system fonts</li>
+        <li>Decorative gradients in UI elements</li>
       </ul>
     </div>
   </div>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════
-     16 · ASSETS
-══════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════
+     16 ASSETS
+══════════════════════════════════ -->
 <div id="assets" class="tab">
   <div class="ey">16 · Developer</div>
   <h2>Asset <em>Specs</em></h2>
-
   <table>
     <thead><tr><th>Asset</th><th>Format</th><th>Variants</th></tr></thead>
     <tbody>
-      <tr>
-        <td>Logo — V-mark + wordmark</td>
-        <td><code>.svg</code></td>
-        <td>Gold on dark · Black on ivory · Gold on void</td>
-      </tr>
-      <tr>
-        <td>Logo — icon only</td>
-        <td><code>.svg</code></td>
-        <td>Gold · Ivory · Dark</td>
-      </tr>
-      <tr>
-        <td>Product — GINesis</td>
-        <td><code>.png</code> + <code>.webp</code></td>
-        <td>Light BG · Dark BG · Transparent</td>
-      </tr>
-      <tr>
-        <td>Product — GINcognito</td>
-        <td><code>.png</code> + <code>.webp</code></td>
-        <td>Dark · Void · Ambient</td>
-      </tr>
-      <tr>
-        <td>Brand / certification badges</td>
-        <td><code>.svg</code></td>
-        <td>Gold · Ivory · Black</td>
-      </tr>
-      <tr>
-        <td>Social media templates</td>
-        <td><code>.ai</code> / <code>.psd</code></td>
-        <td>1:1 · 4:5 · 9:16 · 16:9</td>
-      </tr>
-      <tr>
-        <td>Photography — Hero</td>
-        <td><code>.jpg</code> + <code>.webp</code></td>
-        <td>Min 3000×3000px · sRGB</td>
-      </tr>
-      <tr>
-        <td>Photography — Lifestyle</td>
-        <td><code>.jpg</code> + <code>.webp</code></td>
-        <td>Min 2400×1600px · 72dpi web</td>
-      </tr>
+      <tr><td>Logo — V-mark + wordmark</td><td><code>.svg</code></td><td>Gold on dark · Black on ivory · Gold on void</td></tr>
+      <tr><td>Logo — icon only</td><td><code>.svg</code></td><td>Gold · Ivory · Dark</td></tr>
+      <tr><td>Product — GINesis</td><td><code>.png</code> + <code>.webp</code></td><td>Light bg · Dark bg · Transparent</td></tr>
+      <tr><td>Product — GINcognito</td><td><code>.png</code> + <code>.webp</code></td><td>Dark · Void · Ambient</td></tr>
+      <tr><td>Social media templates</td><td><code>.ai</code> / <code>.psd</code></td><td>1:1 · 4:5 · 9:16 · 16:9</td></tr>
+      <tr><td>Photography — Hero</td><td><code>.jpg</code> + <code>.webp</code></td><td>Min 3000 × 3000px · sRGB</td></tr>
+      <tr><td>Photography — Lifestyle</td><td><code>.jpg</code> + <code>.webp</code></td><td>Min 2400 × 1600px · 72 dpi web</td></tr>
     </tbody>
   </table>
-
   <div class="note" style="margin-top:20px">
-    <strong>Request assets:</strong> Rahul 'Raj' Sheth &middot; raj@veridoshe.com &middot; +1 310 420 4376
+    <strong>Request assets:</strong> Rahul 'Raj' Sheth · raj@veridoshe.com · +1 310 420 4376
   </div>
 </div>
 
 </main>
-</div><!-- /.wrap -->
+</div>
 
 <script>
-  function show(id) {
-    document.querySelectorAll('main > .tab, main > div[id]').forEach(t => t.classList.remove('on'));
+  function go(id) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
     document.querySelectorAll('.nl').forEach(l => l.classList.remove('on'));
-    const el = document.getElementById(id);
-    if (el) el.classList.add('on');
-    const lk = document.querySelector(`.nl[onclick*="'${id}'"]`);
-    if (lk) lk.classList.add('on');
-    window.scrollTo({ top:0, behavior:'smooth' });
+    const tab = document.getElementById(id);
+    if (tab) tab.classList.add('on');
+    const lnk = document.querySelector('.nl[onclick="go(\'' + id + '\')"]');
+    if (lnk) lnk.classList.add('on');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  show('cover');
+  go('cover');
 </script>
 </body>
 </html>
