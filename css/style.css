@@ -1010,7 +1010,7 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
   gap:14px; background:var(--deep-umber);
   padding-bottom:60px;              /* leave room for caption — no overlap */
 }
-.photo-icon  { font-size:44px; opacity:.22; }
+.photo-icon  { font-size:44px; }
 .photo-label { font-size:9px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--champagne); }
 .photo-caption { padding:14px 18px; background:rgba(13,12,8,.95); border-top:1px solid var(--border); }
 .photo-caption-title { font-size:9px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin-bottom:3px; }
@@ -1198,4 +1198,12 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
   margin-top:     7px;
   opacity:        .5;
   letter-spacing: .02em;
+}
+
+.photo-example{
+  width:100%;
+  height:auto;
+  margin-top:14px;
+  border:1px solid var(--border);
+  display:block;
 }
