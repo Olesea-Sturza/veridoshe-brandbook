@@ -1209,3 +1209,120 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
   display:block;
   margin-top:0;
 }
+
+.story-heading {
+  display:     flex;
+  align-items: baseline;
+  gap:         16px;
+  margin-bottom: 36px;
+  line-height: 1;
+}
+.story-h-bold {
+  font-family:    var(--sans);
+  font-size:      clamp(38px, 5.5vw, 68px);
+  font-weight:    700;
+  letter-spacing: var(--ls-h1);
+  text-transform: uppercase;
+  color:          var(--ivory);
+}
+.story-h-serif {
+  font-family:  var(--serif);
+  font-size:    clamp(36px, 5.2vw, 64px);
+  font-weight:  300;
+  font-style:   italic;
+  color:        var(--gold);
+  letter-spacing: .02em;
+}
+
+/* ── Intro block — editorial, не note ── */
+.story-intro {
+  display:  grid;
+  grid-template-columns: 2px 1fr;
+  gap:      0 28px;
+  margin-bottom: 4px;
+}
+.story-intro-line {
+  background: var(--gold);
+  width:      2px;
+}
+.story-intro-text {
+  font-size:   15px;
+  font-weight: 300;
+  line-height: 1.9;
+  color:       var(--ivory);
+  margin:      0;
+}
+.story-intro-text strong {
+  color:       var(--gold);
+  font-weight: 500;
+}
+
+/* ── Section block ── */
+.story-block {
+  margin-top: 4px;
+}
+.story-block-label {
+  font-size:      9px;
+  font-weight:    700;
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color:          var(--gold);
+  margin-bottom:  20px;
+  display:        flex;
+  align-items:    center;
+  gap:            14px;
+}
+.story-block-label::after {
+  content:    "";
+  flex:       1;
+  height:     1px;
+  background: var(--border);
+}
+
+/* ── Tagline display ── */
+.story-tagline-display {
+  font-family:    var(--sans);
+  font-size:      clamp(18px, 2.8vw, 32px);
+  font-weight:    600;
+  letter-spacing: .30em;
+  word-spacing:   .4em;
+  text-transform: uppercase;
+  color:          var(--gold);
+  padding:        24px 0;
+}
+
+/* ── Principles grid — чище чем таблица ── */
+.principles-grid {
+  display:        flex;
+  flex-direction: column;
+  border:         1px solid var(--border);
+}
+.principle-row {
+  display:               grid;
+  grid-template-columns: 160px 1fr;
+  border-bottom:         1px solid var(--border-lo);
+  transition:            background .15s;
+}
+.principle-row:last-child { border-bottom: none; }
+.principle-row:hover { background: var(--gold-05); }
+
+.principle-key {
+  padding:        18px 20px;
+  font-size:      11px;
+  font-weight:    700;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color:          var(--gold);
+  border-right:   1px solid var(--border-lo);
+  display:        flex;
+  align-items:    center;
+}
+.principle-val {
+  padding:     18px 24px;
+  font-size:   14px;
+  font-weight: 300;
+  color:       var(--ivory);
+  line-height: 1.65;
+  display:     flex;
+  align-items: center;
+}
