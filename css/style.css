@@ -82,10 +82,10 @@
 
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--obsidian);color:var(--ivory);font-family:var(--fb);font-size:13px;font-weight:300;line-height:1.7}
+body{background:var(--obsidian);color:var(--ivory);font-family:var(--fb);font-size:13px;font-weight:100;line-height:1.7}
 p{color:var(--champagne);line-height:1.7;margin-bottom:14px}
 p:last-child{margin-bottom:0}
-strong{color:var(--ivory);font-weight:300}
+strong{color:var(--ivory);font-weight:200}
 a{color:var(--gold)}
 h3{font-family:var(--fd);font-size:18px;font-weight:700;letter-spacing:var(--ls-body);text-transform:uppercase;color:var(--ivory);margin-bottom:12px}
 
@@ -923,9 +923,10 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   font-size:9px;
   font-weight:600;
   letter-spacing:.20em;
-  color:var(--bronze);
+  color:var(--ivory);
   text-transform:uppercase;
 }
+
 
 .mock-hero{
   text-align:center;
@@ -968,8 +969,8 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
 .mock-p{
   font-family:var(--fb);
   font-size:13px;
-  font-weight:300;
-  color:var(--champagne);
+  font-weight:200;
+  color:var(--ivory);
   line-height:1.8;
   max-width:520px;
   margin:0 auto 30px;
@@ -1038,7 +1039,7 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
 .mc-text{
   font-family:var(--fb);
   font-size:12px;
-  font-weight:300;
+ 
   color:var(--champagne);
   line-height:1.65;
 }
@@ -1104,7 +1105,7 @@ select.inp{appearance:none;cursor:pointer;padding-right:34px}
   color:var(--ivory);
 }
 .mc-text_ginesis{
-  
+  font-weight:400;
   color:var(--darkjuniper);
   
 }
