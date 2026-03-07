@@ -689,8 +689,8 @@ td:first-child { color:var(--gold); font-weight:500; }
 .dont .ddt { color:rgba(210,110,110,.95); }
 .ddl { list-style:none; display:flex; flex-direction:column; gap:10px; }
 .ddl li { font-size:13px; color:var(--ivory); padding-left:20px; position:relative; line-height:1.5; }
-.do   .ddl li::before { content:"✓"; position:absolute; left:0; color:rgba(120,210,140,.95); font-weight:700; }
-.dont .ddl li::before { content:"✕"; position:absolute; left:0; color:rgba(210,110,110,.95); font-weight:700; }
+.do   .ddl li::before { content:""; position:absolute; left:0; color:rgba(120,210,140,.95); font-weight:700; }
+.dont .ddl li::before { content:""; position:absolute; left:0; color:rgba(210,110,110,.95); font-weight:700; }
 
 /* ════════════════════════════════════════════════════════════
    COLOR PAIRINGS
