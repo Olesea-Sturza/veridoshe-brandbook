@@ -1202,10 +1202,10 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
 
 .photo-example{
   width:100%;
-  height:auto;
-  margin-top:14px;
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  object-position:left bottom;
   border:1px solid var(--border);
   display:block;
- 
-
+  margin-top:0;
 }
