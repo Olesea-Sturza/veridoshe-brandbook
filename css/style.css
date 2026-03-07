@@ -1100,3 +1100,102 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
 .grad-name { font-size:11px; font-weight:700; letter-spacing:var(--ls-label); text-transform:uppercase; margin-bottom:5px; }
 .grad-use  { font-size:10px; opacity:.75; line-height:1.5; text-transform:uppercase; letter-spacing:.04em; }
 .grad-code { font-family:var(--mono); font-size:9px; margin-top:6px; opacity:.55; letter-spacing:.02em; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ══ VERIDOSHÉ GRADIENTS ══════════════════════════════════ */
+
+/* Hero — page backgrounds, large sections */
+.grad-hero {
+  background: linear-gradient(160deg, var(--midnight) 0%, var(--obsidian) 100%);
+}
+
+/* Warm editorial — cards, callouts */
+.grad-warm {
+  background: linear-gradient(135deg, var(--deep-umber) 0%, var(--midnight) 100%);
+}
+
+/* Packaging — bottle mockups, premium print */
+.grad-packaging {
+  background: linear-gradient(
+    135deg,
+    var(--midnight)        0%,
+    var(--deep-umber)      60%,
+    rgba(200,169,126,.10)  100%
+  );
+}
+
+/* GINesis — product context ONLY */
+.grad-ginesis {
+  background: linear-gradient(160deg, var(--dark-juniper) 0%, var(--juniper) 100%);
+}
+
+/* Champagne light — print, light-theme headers */
+.grad-champagne {
+  background: linear-gradient(160deg, var(--champagne) 0%, var(--ivory) 100%);
+}
+
+/* Gold veil — image overlays, section fades */
+.grad-gold-veil {
+  background: linear-gradient(180deg, transparent 40%, rgba(200,169,126,.08) 100%);
+}
+
+/* ── Gradient swatch grid ── */
+.grad-grid {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:                   2px;
+  margin-top:            20px;
+}
+.grad-card {
+  min-height:     170px;
+  padding:        20px 18px 18px;
+  display:        flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  position:       relative;
+}
+.grad-badge {
+  position:       absolute;
+  top:            14px;
+  right:          14px;
+  font-size:      7px;
+  font-weight:    700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  padding:        2px 8px;
+  border:         1px solid currentColor;
+  opacity:        .5;
+}
+.grad-name {
+  font-family:    var(--sans);
+  font-size:      12px;
+  font-weight:    700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom:  5px;
+}
+.grad-use {
+  font-size:      10px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  line-height:    1.5;
+  opacity:        .75;
+}
+.grad-val {
+  font-family:    var(--mono);
+  font-size:      9px;
+  margin-top:     7px;
+  opacity:        .5;
+  letter-spacing: .02em;
+}
