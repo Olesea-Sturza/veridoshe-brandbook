@@ -1447,3 +1447,12 @@ select.inp { appearance:none; cursor:pointer; padding-right:36px; }
   opacity: 1;
   transform: translateY(-2px);
 }
+
+
+
+
+.cocktail-icons {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px; /* меняй эту цифру */
+}
